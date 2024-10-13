@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
       <div class="toc-c">
         <ol>
           <li>
-            <li><b>1. Introduction</b></li>
+            <b>1. Introduction</b>
             <ol>
               <li>1.1 Importance of Date and Time</li>
               <li>1.2 Real-World Use Cases</li>
@@ -231,81 +231,114 @@
             point in time or calculate the duration between events.
           </p>
 
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code1.png" alt="code sinppet 1" />
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code1.png" alt="code sinppet 1" />
+            </div>
+            <div class="output">
+              <span><b>Output </b> :</span>
+              <img src="images/output1.png" alt="code output 1" />
+            </div>
           </div>
-          <div class="output">
-          <span><b>Output </b> :</span>
-            <img src="images/output1.png" alt="code output 1" />
-          </div>
-        </div>
-        <p>The output represents the number of seconds that have passed since January 1, 1970 (the Unix epoch). You can store this timestamp for future reference and convert it to human-readable formats later.</p>
+          <p>
+            The output represents the number of seconds that have passed since
+            January 1, 1970 (the Unix epoch). You can store this timestamp for
+            future reference and convert it to human-readable formats later.
+          </p>
         </div>
       </article>
       <article>
-      <h2>2.3 Measuring Execution Time with <i>time()</i></h2>
-      <div class="content-article">
-        <p>
-        If you want to measure how long a certain block of code takes to execute, you can record the time at the start and end of execution, then calculate the difference.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code2.png" alt="code snippet 2">
+        <h2>2.3 Measuring Execution Time with <i>time()</i></h2>
+        <div class="content-article">
+          <p>
+            If you want to measure how long a certain block of code takes to
+            execute, you can record the time at the start and end of execution,
+            then calculate the difference.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code2.png" alt="code snippet 2" />
+            </div>
+            <div class="output">
+              <span><b>Output </b> :</span>
+              <img src="images/output2.png" alt="code output 2" />
+            </div>
           </div>
-          <div class="output">
-            <span><b>Output </b> :</span> 
-            <img src="images/output2.png" alt="code output 2">
-          </div>
+          <p>
+            This demonstrates how to use <i>time()</i> to measure the execution
+            duration of a code block. You can use this technique for performance
+            benchmarking in your code.
+          </p>
         </div>
-        <p>
-        This demonstrates how to use <i>time()</i> to measure the execution duration of a code block. You can use this technique for performance benchmarking in your code.
-        </p>
-      </div>
       </article>
       <article>
-      <h2>2.4 Delaying Program Execution (<i>sleep()</i>)
-</h2>
-      <div class="content-article"> 
-      <p>
-        The <i>time.sleep(seconds)</i> function pauses the execution of the program for the specified number of seconds. This is particularly useful when you want to introduce delays or space out requests in time-sensitive operations like web scraping or API requests.
-      </p>
-      <div class="code-snippet">
-        <div class="code">
-          <img src="images/code3.png" alt="code snippet 3">
+        <h2>2.4 Delaying Program Execution (<i>sleep()</i>)</h2>
+        <div class="content-article">
+          <p>
+            The <i>time.sleep(seconds)</i> function pauses the execution of the
+            program for the specified number of seconds. This is particularly
+            useful when you want to introduce delays or space out requests in
+            time-sensitive operations like web scraping or API requests.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code3.png" alt="code snippet 3" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> : </span>
+              <img src="images/output3.png" alt="code output 3" />
+            </div>
+          </div>
+          <p>
+            In this example, the program pauses for 3 seconds before resuming
+            execution. This can be useful for implementing retries,
+            rate-limiting, or pacing long-running processes.
+          </p>
         </div>
-        <div class="output">
-          <span><b>Output</b> : </span>
-          <img src="images/output3.png" alt="code output 3">
+      </article>
+      <article>
+        <h2>2.5 Formatting Time into Readable Strings (<i>ctime()</i>)</h2>
+        <div class="content-article">
+          <p>
+            The <i>time.ctime()</i> function converts a timestamp into a
+            human-readable string format. It’s a quick and simple way to format
+            the output of <i>time()</i> for readability.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code4.png" alt="code snippet 4" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> : </span>
+              <img src="images/output4.png" alt="code output 4" />
+            </div>
+          </div>
+          <p>
+            This function provides a simple way to convert the Unix timestamp to
+            a more readable string format, which is useful for logging or
+            displaying timestamps in reports.
+          </p>
         </div>
-        </div>
-        <p>
-          In this example, the program pauses for 3 seconds before resuming execution. This can be useful for implementing retries, rate-limiting, or pacing long-running processes.
-        </p>
-      </div>
       </article>
       <article>
         <h2>
-        2.5 Formatting Time into Readable Strings (<i>ctime()</i>)
+          2.6 Converting to UTC and Local Time (<i>gmtime()</i> and
+          <i>localtime()</i>)
         </h2>
-        <div class="content-article">
-        <p>The <i>time.ctime()</i> function converts a timestamp into a human-readable string format. It’s a quick and simple way to format the output of <i>time()</i> for readability.
-        </p>
         <div class="code-snippet">
+          <p>The <i>time.gmtime()</i> function converts a timestamp into UTC (Coordinated Universal Time), while `time.localtime()` converts it into the local time of your system.</p>
           <div class="code">
-            <img src="images/code4.png" alt="code snippet 4">
+            <img src="images/code5.png" alt="code snippet 5" />
           </div>
           <div class="output">
-            <span><b>Output</b> : </span>
-            <img src="images/output4.png" alt="code output 4">
+            <img src="images/output5.png" alt="code output 5" />
           </div>
         </div>
-        <p>This function provides a simple way to convert the Unix timestamp to a more readable string format, which is useful for logging or displaying timestamps in reports.
-        </p>
-        </div>
+        <p>This example illustrates how to convert a timestamp into both UTC and local time, depending on your needs. You can further customize the formatting using <i>strftime()</i>.</p>
       </article>
       <article>
-      <h2>2.6 Converting to UTC and Local Time (<i>gmtime()</i> and <i>localtime()</i>)</h2>
+        <h2>2.7 Converting Timestamps to <i>struct_time</i> and Back (<i>mktime()</i> and <i>asctime()</i>)</h2>
+        <div class="code-snippet"></div>
       </article>
     </div>
   </body>
