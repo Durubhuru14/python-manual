@@ -1,13 +1,14 @@
 from datetime import datetime
-import pytz
 
-# Create a timezone-aware datetime object
-utc_zone = pytz.utc
-utc_datetime = datetime.now(utc_zone)
+# Function to log data with a timestamp
+def log_data_entry(entry):
+    # Fetch current date and time
+    timestamp = datetime.now()
+    
+    # Format the log message
+    log_message = f"{timestamp}: {entry}"
+    return log_message
 
-# Convert UTC time to a different time zone (e.g., US/Eastern)
-eastern_zone = pytz.timezone('US/Eastern')
-eastern_datetime = utc_datetime.astimezone(eastern_zone)
-
-print("UTC Datetime:", utc_datetime)
-print("Eastern Datetime:", eastern_datetime)
+# Log an example data entry
+log_entry = log_data_entry("User logged in successfully.")
+print(log_entry)
