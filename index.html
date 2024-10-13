@@ -325,20 +325,151 @@
           2.6 Converting to UTC and Local Time (<i>gmtime()</i> and
           <i>localtime()</i>)
         </h2>
-        <div class="code-snippet">
-          <p>The <i>time.gmtime()</i> function converts a timestamp into UTC (Coordinated Universal Time), while `time.localtime()` converts it into the local time of your system.</p>
-          <div class="code">
-            <img src="images/code5.png" alt="code snippet 5" />
+        <div class="content-article">
+          <p>
+            The <i>time.gmtime()</i> function converts a timestamp into UTC
+            (Coordinated Universal Time), while <i>time.localtime()</i> converts
+            it into the local time of your system.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code5.png" alt="code snippet 5" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output5.png" alt="code output 5" />
+            </div>
           </div>
-          <div class="output">
-            <img src="images/output5.png" alt="code output 5" />
-          </div>
+          <p>
+            This example illustrates how to convert a timestamp into both UTC
+            and local time, depending on your needs. You can further customize
+            the formatting using <i>strftime()</i>.
+          </p>
         </div>
-        <p>This example illustrates how to convert a timestamp into both UTC and local time, depending on your needs. You can further customize the formatting using <i>strftime()</i>.</p>
       </article>
       <article>
-        <h2>2.7 Converting Timestamps to <i>struct_time</i> and Back (<i>mktime()</i> and <i>asctime()</i>)</h2>
-        <div class="code-snippet"></div>
+        <h2>
+          2.7 Converting Timestamps to <i>struct_time</i> and Back (<i
+            >mktime()</i
+          >
+          and <i>asctime()</i>)
+        </h2>
+        <div class="content-article">
+          <p>
+            - <b><i>mktime()</i></b> : Converts a `struct_time` object back into
+            a timestamp.
+          </p>
+          <p>
+            - <b><i>asctime()</i></b> : Converts a `struct_time` object into a
+            human-readable string.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code6.png" alt="code snippet 6" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output6.png" alt="code output 6" />
+            </div>
+          </div>
+          <p>
+            These functions allow for conversion between different
+            representations of time, enabling flexible handling of time data.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>2.8 Example: Timing a Function's Execution</h2>
+        <div class="content-article">
+          <p>
+            This example demonstrates how to time a function’s execution using
+            the <i>time()</i> function.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code7.png" alt="code snippet 7" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output7.png" alt="code output 7" />
+            </div>
+          </div>
+          <p>
+            This practical example is useful when you need to benchmark or
+            optimize the performance of specific parts of your code.
+          </p>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>3. The <i>datetime</i> Module</h1>
+      <p>
+        The <i>datetime</i> module in Python is a powerful and versatile module
+        that provides classes for manipulating dates and times. Understanding
+        its structure is essential for effectively working with date and time
+        data in your applications.
+      </p>
+      <article>
+        <h2>3.1 Understanding <i>datetime</i> Class Hierarchy</h2>
+        <div class="content-article">
+          <p>The <i>datetime</i> module includes several key classes:</p>
+          <div class="subpoints">
+            <p>
+              - <b><i>date</i></b> : Represents a date (year, month, day)
+              without time.
+            </p>
+            <p>
+              - <b><i>time</i></b> : Represents a time (hour, minute, second,
+              microsecond) without date.
+            </p>
+            <p>
+              - <b><i>datetime</i></b> : Combines both date and time into a
+              single object.
+            </p>
+            <p>
+              - <b><i>timedelta</i></b> : Represents a duration, the difference between two dates or times.
+            </p>
+            <p>
+              - <b><i>tzinfo</i></b> : Base class for dealing with time zones.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>3.2 Creating and Accessing <i>date</i> Objects</h2>
+        <div class="content-article">
+          <p>You can create a <i>date</i> object using the <i>date</i> class, specifying the year, month, and day.</p>
+          <div class="code-snippet">
+            <div class="code">
+              <span><b>Example: Creating and Accessing `date`</b></span>
+              <img src="images/code7.png" alt="code snippet 7">
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output7.png" alt="code output 7">
+            </div>
+          </div>
+          <p>In this example, we create a <i>date</i> object and access its individual components (year, month, day).</p>
+          <div class="code-snippet">
+            <span><b>- Practical Example: Formatting and Validating Dates</b></span>
+            <span>Formatting dates for display or validation is a common task.</span>
+            <div class="code">
+              <span><b>Example: Formatting a Date</b></span>
+              <img src="images/code8.png" alt="code snippet 8">
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output8.png" alt="code output 8">
+            </div>
+          </div>
+          <p>Here, we format the <i>date</i> object into a more human-readable format using <i>strftime</i>.</p>
+        </div>
+      </article>
+      <article>
+        <h2>3.3 Working with <i>time</i> Objects</h2>
+        <div class="content-article">
+          <p>A <i>time</i> object represents only the time component (hours, minutes, seconds, and microseconds).</p>
+        </div>
       </article>
     </div>
   </body>
