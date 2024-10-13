@@ -1,1 +1,2 @@
-Formatted Time: 10:30:45
+UTC Datetime: 2024-10-13 13:05:42.698839+00:00
+Eastern Datetime: 2024-10-13 09:05:42.698839-04:00
