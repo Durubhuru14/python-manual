@@ -1,3 +1,5 @@
 import time
+
 current_time = time.time()
-print("Current Time (seconds since epoch):", current_time)
+formatted_time = time.ctime(current_time)
+print("Formatted Time:", formatted_time)

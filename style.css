@@ -111,7 +111,7 @@ img {
 @media print {
   @page {
     size: A4; /* Set page size to A4 */
-    margin: 1in; /* Set 1-inch margins */
+    margin: 16mm; /* Set 1-inch margins */
   }
 
   body {
