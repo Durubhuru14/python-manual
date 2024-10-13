@@ -1,0 +1,187 @@
+/* ===========================================================
+   RESET & BASE STYLES
+   =========================================================== */
+
+/* Reset default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles for the body */
+body {
+  font-family: Arial, sans-serif; /* Professional and readable font */
+  font-size: 12pt; /* Standard 12pt font for body */
+  line-height: 1.5; /* 1.5 line spacing */
+  color: black;
+  margin: 20px; /*Overall margin for the body */
+}
+
+/* ===========================================================
+   TYPOGRAPHY
+   =========================================================== */
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  margin: 1em 0; /* Margin above and below headings */
+}
+
+h1 {
+  font-size: 18pt;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16pt;
+}
+
+h3 {
+  font-size: 14pt;
+}
+
+/* Paragraphs */
+p {
+  margin: 0.5em 0; /* Margin above and below paragraphs */
+  text-align: justify;
+  margin-left: 20px; /* Left margin for indentation */
+}
+
+span {
+  display: block;
+  margin: 0.5em 0;
+}
+
+/* ===========================================================
+   IMAGES
+   =========================================================== */
+
+img {
+  max-width: 100%; /* Ensure images don't overflow the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto; /* Center images */
+}
+
+/* ===========================================================
+   TABLE OF CONTENTS
+   =========================================================== */
+
+.toc-h {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.toc-c ol {
+  list-style-position: inside;
+  margin-left: 20px;
+  list-style-type: none; /* Remove default numbering */
+}
+
+.toc-c > ol > ol {
+  margin-left: 20px;
+  list-style-type: none; /* Remove default numbering for nested lists */
+}
+
+/* ===========================================================
+   COMMON STYLES
+   =========================================================== */
+.block {
+  margin-left: 20px;
+}
+
+.content-article {
+  margin-left: 20px;
+}
+
+.subpoints {
+  margin-left: 20px;
+}
+.code-snippet {
+  margin-left: 20px;
+}
+/* ===========================================================
+   PRINT STYLES
+   =========================================================== */
+
+@media print {
+  @page {
+    size: A4; /* Set page size to A4 */
+    margin: 1in; /* Set 1-inch margins */
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: black;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: bold;
+    margin: 1em 0;
+  }
+
+  h1 {
+    font-size: 18pt;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 16pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+  }
+
+  p {
+    margin: 0.5em 0;
+    text-align: justify;
+    margin-left: 20px;
+  }
+
+  /* Page breaks for section or chapter endings */
+  .page-break {
+    page-break-before: always;
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Ensure margins apply to article in print */
+  article {
+    margin-bottom: 25px;
+  }
+
+  .content-article {
+    margin-left: 20px;
+  }
+
+  .subpoints {
+    margin-left: 20px;
+  }
+
+  .code-snippet {
+    margin-left: 20px;
+  }
+
+  /* Hide unnecessary elements on print */
+  .no-print,
+  nav,
+  footer {
+    display: none;
+  }
+}

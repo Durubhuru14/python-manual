@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>HTML</title>
+    <!-- Removed the empty <style> tag -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="toc">
+      <h2 class="toc-h">Table of Contents</h2>
+      <div class="toc-c">
+        <ol>
+          <li>
+            <li><b>1. Introduction</b></li>
+            <ol>
+              <li>1.1 Importance of Date and Time</li>
+              <li>1.2 Real-World Use Cases</li>
+            </ol>
+          </li>
+          <li>
+            <b>2. The <i>time</i> Module</b>
+            <ol>
+              <li>2.1 Introduction and Use Cases</li>
+              <li>2.2 Retrieving the Current Time (<i>time()</i>)</li>
+              <li>2.3 Measuring Execution Time with <i>time()</i></li>
+              <li>2.4 Delaying Program Execution (<i>sleep()</i>)</li>
+              <li>
+                2.5 Formatting Time into Readable Strings (<i>ctime()</i>)
+              </li>
+              <li>
+                2.6 Converting to UTC and Local Time (<i>gmtime()</i> and
+                <i>localtime()</i>)
+              </li>
+              <li>
+                2.7 Converting Timestamps to <i>struct_time</i> and Back (<i
+                  >mktime()</i
+                >
+                and <i>asctime()</i>)
+              </li>
+              <li>2.8 Example: Timing a Function's Execution</li>
+            </ol>
+          </li>
+          <li>
+            <b>3. The <i>datetime</i> Module</b>
+            <ol>
+              <li>3.1 Understanding <i>datetime</i> Class Hierarchy</li>
+              <li>
+                3.2 Creating and Accessing <i>date</i> Objects
+                <ol>
+                  <li>- Practical Example: Formatting and Validating Dates</li>
+                </ol>
+              </li>
+              <li>
+                3.3 Working with <i>time</i> Objects
+                <ol>
+                  <li>- Practical Example: Time Formatting</li>
+                </ol>
+              </li>
+              <li>
+                3.4 Handling Complete <i>datetime</i> Objects
+                <ol>
+                  <li>- Example: Timestamps for Log Entries</li>
+                </ol>
+              </li>
+              <li>3.5 Time Arithmetic with <i>timedelta</i></li>
+              <li>3.6 Handling Time Zones with <i>pytz</i></li>
+            </ol>
+          </li>
+          <li>
+            <b>4. Fetching the Current Date and Time</b>
+            <ol>
+              <li>
+                4.1 Using <i>datetime.now()</i> and <i>datetime.today()</i>
+              </li>
+              <li>4.2 Combining <i>date</i> and <i>time</i> Objects</li>
+              <li>4.3 Example: Timestamping Data Entries</li>
+            </ol>
+          </li>
+          <li>
+            <b>5. Formatting and Parsing Dates and Times</b>
+            <ol>
+              <li>5.1 Using <i>strftime()</i> to Format Date/Time</li>
+              <li>5.2 Parsing Strings into Dates with <i>strptime()</i></li>
+              <li>5.3 Example: Validating User Inputs</li>
+            </ol>
+          </li>
+          <li>
+            <b>6. Comparing and Sorting Dates</b>
+            <ol>
+              <li>6.1 Date Comparison Operations</li>
+              <li>6.2 Example: Sorting Events by Date</li>
+            </ol>
+          </li>
+          <li>
+            <b>7. Date Arithmetic and Time Intervals</b>
+            <ol>
+              <li>7.1 Using <i>timedelta</i> for Date Arithmetic</li>
+              <li>7.2 Example: Countdown to a Future Event</li>
+            </ol>
+          </li>
+          <li>
+            <b>8. Measuring Program Execution Time</b>
+            <ol>
+              <li>
+                8.1 Performance Testing with <i>time</i> and <i>datetime</i>
+              </li>
+              <li>8.2 Example: Benchmarking Code Blocks</li>
+            </ol>
+          </li>
+          <li>
+            <b>9. The <i>calendar</i> Module</b>
+            <ol>
+              <li>9.1 Introduction to Calendar Functions</li>
+              <li>9.2 Generating Month and Year Calendars</li>
+              <li>9.3 Checking Leap Year</li>
+              <li>9.4 Weekday and Month Constants</li>
+              <li>9.5 Example: Scheduling Events on Weekdays</li>
+            </ol>
+          </li>
+          <li>
+            <b>10. Error Handling in Date/Time Operations</b>
+            <ol>
+              <li>10.1 Validating User Inputs and Parsing Errors</li>
+              <li>10.2 Example: Correctly Handling Invalid Dates</li>
+            </ol>
+          </li>
+          <li>
+            <b>11. Practical Applications</b>
+            <ol>
+              <li>11.1 Scheduling, Logging, and Event Management</li>
+              <li>11.2 Example: Automating Task Scheduling</li>
+            </ol>
+          </li>
+          <li>
+            <b>12. Conclusion</b>
+            <ol>
+              <li>12.1 Best Practices for Date and Time Handling in Python</li>
+              <li>12.2 Summary of Important Functions</li>
+            </ol>
+          </li>
+          <li><b>13. References and Further Reading</b></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block page-break">
+      <h1>1. Introduction</h1>
+      <article>
+        <h2>1.1 Importance of Date and Time in Programming</h2>
+        <div class="content-article">
+          <p>
+            In nearly every real-world application, working with dates and times
+            is essential. Whether it's generating logs, scheduling tasks, or
+            performing time-sensitive calculations, effective date and time
+            management is crucial for ensuring correctness in code.
+          </p>
+          <p>In Python, three powerful modules help us handle these aspects:</p>
+          <div class="subpoints">
+            <p>
+              - <i><b>time</b></i> : Provides simple methods for interacting
+              with time-based functionality such as measuring elapsed time,
+              delaying execution, or converting timestamps to human-readable
+              formats.
+            </p>
+            <p>
+              - <i><b>datetime</b></i> : Extends functionality to handle dates
+              and times at a more granular level, allowing precise operations,
+              including parsing, formatting, and manipulating dates and times.
+            </p>
+            <p>
+              - <i><b>calendar</b></i> : Specializes in calendar-based
+              operations, such as determining weekdays, checking leap years, or
+              generating calendar grids.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>1.2 Real-World Use Cases</h2>
+        <div class="content-article">
+          <p>
+            1. <b>Logging</b> : Recording timestamps to track when specific
+            events occur.
+          </p>
+          <p>
+            2. <b>Scheduling</b> : Automating tasks to run at specific intervals
+            or dates.
+          </p>
+          <p>
+            3. <b>Deadlines</b> : Calculating the number of days between two
+            dates or determining future deadlines.
+          </p>
+          <p>
+            4. <b>User Input Validation</b> : Ensuring user-supplied dates and
+            times are in the correct format.
+          </p>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>2. The <i>time</i> Module</h1>
+      <article>
+        <h2>2.1 Introduction and Use Cases</h2>
+        <div class="content-article">
+          <p>
+            The <i>time</i> module in Python is a low-level module that provides
+            basic time-related functionality. This module allows us to:
+          </p>
+          <div class="subpoints">
+            <p>- Measure the current time in seconds since the Unix epoch.</p>
+            <p>- Convret timestamps into human-readable formats.</p>
+            <p>- Measure elapsed time during code execution.</p>
+            <p>
+              - Sleep (pause) program execution for a specified number of
+              seconds.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>2.2 Retrieving the Current Time (<i>time()</i>)</h2>
+        <div class="content-article">
+          <p>
+            The <i>time.time()</i> function returns the number of seconds since
+            the epoch (Unix timestamp). This is useful when you need to record a
+            point in time or calculate the duration between events.
+          </p>
+
+        <div class="code-snippet">
+          <div class="code">
+            <img src="images/code1.png" alt="code sinppet 1" />
+          </div>
+          <div class="output">
+          <span><b>Output </b> :</span>
+            <img src="images/output1.png" alt="code output 1" />
+          </div>
+        </div>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
