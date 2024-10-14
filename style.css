@@ -11,11 +11,15 @@
 
 /* Base styles for the body */
 body {
-  font-family: Arial, sans-serif; /* Professional and readable font */
-  font-size: 12pt; /* Standard 12pt font for body */
-  line-height: 1.5; /* 1.5 line spacing */
+  font-family: Arial, sans-serif;
+  /* Professional and readable font */
+  font-size: 12pt;
+  /* Standard 12pt font for body */
+  line-height: 1.5;
+  /* 1.5 line spacing */
   color: black;
-  margin: 20px; /*Overall margin for the body */
+  margin: 20px;
+  /*Overall margin for the body */
 }
 
 /* ===========================================================
@@ -28,7 +32,8 @@ h2,
 h3,
 h4 {
   font-weight: bold;
-  margin: 1em 0; /* Margin above and below headings */
+  margin: 1em 0;
+  /* Margin above and below headings */
 }
 
 h1 {
@@ -46,9 +51,11 @@ h3 {
 
 /* Paragraphs */
 p {
-  margin: 0.5em 0; /* Margin above and below paragraphs */
+  margin: 0.5em 0;
+  /* Margin above and below paragraphs */
   text-align: justify;
-  margin-left: 20px; /* Left margin for indentation */
+  margin-left: 20px;
+  /* Left margin for indentation */
 }
 
 span {
@@ -61,10 +68,13 @@ span {
    =========================================================== */
 
 img {
-  max-width: 100%; /* Ensure images don't overflow the container */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Ensure images don't overflow the container */
+  height: auto;
+  /* Maintain aspect ratio */
   display: block;
-  margin: 0 auto; /* Center images */
+  margin: 0 auto;
+  /* Center images */
 }
 
 /* ===========================================================
@@ -73,18 +83,43 @@ img {
 
 .toc-h {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .toc-c ol {
   list-style-position: inside;
+  padding-left: 0;
   margin-left: 20px;
-  list-style-type: none; /* Remove default numbering */
+  list-style-type: none;
+  /* Remove default numbering */
 }
 
-.toc-c > ol > ol {
+.toc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.toc-dots {
+  flex: 1;
+  border-bottom: 1px dotted #000;
+  margin: 0 10px;
+}
+
+.toc-page {
+  white-space: nowrap;
+}
+
+.toc-subpage {
+  margin-right: 20px;
+}
+
+.toc-c>ol>ol {
   margin-left: 20px;
-  list-style-type: none; /* Remove default numbering for nested lists */
+  list-style-type: none;
+  /* Remove default numbering for nested lists */
+  padding: 0;
 }
 
 /* ===========================================================
@@ -101,18 +136,31 @@ img {
 .subpoints {
   margin-left: 20px;
 }
+
 .code-snippet {
   margin-left: 20px;
 }
+
 /* ===========================================================
    PRINT STYLES
    =========================================================== */
 
 @media print {
   @page {
-    size: A4; /* Set page size to A4 */
-    margin: 16mm; /* Set 1-inch margins */
+  size: A4; /* Set page size to A4 */
+  margin: 16mm; /* Set margins */
+  @bottom-right {
+    content: "page no. " counter(page); /* Page number content */
+    font-weight: bold; /* Make the page number bold */
   }
+  @bottom-left {
+    content: "Comprehensive Python Manual: Date, Time, and Calendar Modules"; /* Footer content */
+    font-style: italic; /* Italic style for the footer */
+    font-weight: bold; /* Make the footer text bold */
+  }
+}
+
+
 
   body {
     font-family: Arial, sans-serif;

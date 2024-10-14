@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>HTML</title>
-  <!-- Removed the empty <style> tag -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -17,18 +16,52 @@
     <div class="toc-c">
       <ol>
         <li>
-          <b>1. Introduction</b>
+          <div class="toc-item">
+            <div class="toc-title"><b>1. Introduction</b></div>
+            <div class="toc-dots"></div>
+            <div class="toc-page">page no. 3</div>
+          </div>
           <ol>
-            <li>1.1 Importance of Date and Time</li>
-            <li>1.2 Real-World Use Cases</li>
+            <li>
+              <div class="toc-item">
+                <div class="toc-tittle">1.1 Importance of Date and Time</div>
+                <div class="toc-dots"></div>
+                <div class="toc-subpage">page no. 3</div>
+              </div>
+            </li>
+            <li>
+              <div class="toc-item">
+                <div class="toc-tittle">1.2 Real-World Use Cases</div>
+                <div class="toc-dots"></div>
+                <div class="toc-subpage">page no. 3</div>
+              </div>
+            </li>
           </ol>
         </li>
         <li>
-          <b>2. The <i>time</i> Module</b>
+          <div class="toc-item">
+            <div class="toc-tittle"><b>2. The <i>time</i> Module</b></div>
+            <div class="toc-dots"></div>
+            <div class="toc-page">page no. 4 - 8</div>
+          </div>
           <ol>
-            <li>2.1 Introduction and Use Cases</li>
-            <li>2.2 Retrieving the Current Time (<i>time()</i>)</li>
-            <li>2.3 Measuring Execution Time with <i>time()</i></li>
+            <li>
+              <div class="toc-item">
+                <div class="toc-tittle">2.1 Introduction and Use Cases</div>
+                <div class="toc-dots"></div>
+                <div class="toc-subpage">page no. 4</div>
+              </div>
+            </li>
+            <li><div class="toc-item">
+              <div class="toc-tittle">2.2 Retrieving the Current Time (<i>time()</i>)</div>
+              <div class="toc-dots"></div>
+              <div class="toc-subpage">page no. 4</div>
+            </div></li>
+            <li><div class="toc-item">
+              <div class="toc-tittle">2.3 Measuring Execution Time with <i>time()</i></div>
+              <div class="toc-dots"></div>
+              <div class="toc-subpage">page no. 4 - 5</div>
+            </div></li>
             <li>2.4 Delaying Program Execution (<i>sleep()</i>)</li>
             <li>
               2.5 Formatting Time into Readable Strings (<i>ctime()</i>)
@@ -576,7 +609,7 @@
         </p>
       </div>
     </article>
-    <article class="page-break">
+    <article>
       <h2>3.6 Handling Time Zones with <i>pytz</i></h2>
       <div class="content-article">
         <p>
@@ -669,6 +702,39 @@
       </div>
     </article>
   </div>
+  <div class="block page-break">
+    <h1>5. Formatting and Parsing Dates and Times</h1>
+    <article>
+      <h2>5.1 Using strftime() to Format Date/Time</h2>
+      <div class="content-article">
+        <p>The <i>strftime()</i> method is used to convert <i>datetime</i> objects into formatted strings. This method allows you to specify how you want the date and time to be represented. You can include various format codes to customize the output.</p>
+        <p><b><i>Common Format Codes </i>:</b></p>
+        <div class="subpoints">
+          <p>- <b><i>%Y</i></b> : Year with century (e.g., 2024)</p>
+          <p>- <b><i>%y</i></b> : Year without century (00-99)</p>
+          <p>- <b><i>%m</i></b> : Month as a zero-padded decimal number (01-12)</p>
+          <p>- <b><i>%d</i></b> : Day of the month as a zero-padded decimal number (01-31)</p>
+          <p>- <b><i>%H</i></b> : Hour (24-hour clock) as a zero-padded decimal number (00-23)</p>
+          <p>- <b><i>%M</i></b> : Minute as a zero-padded decimal number (00-59)</p>
+          <p>- <b><i>%S</i></b> : Second as a zero-padded decimal number (00-59)</p>
+          <p>- <b><i>%A</i></b> : Weekday as a full name (e.g., Monday)</p>
+          <p>- <b><i>%B</i></b> : Month as a full name (e.g., January)</p>
+        </div>
+        <div class="code-snippet">
+          <div class="code">
+            <span><b>Example: Formatting Dates and Times</b></span>
+            <img src="images/code20.png" alt="code snippet 20">
+          </div>
+          <div class="output">
+            <span><b>Output</b> :</span>
+            <img src="images/output20.png" alt="code output 20">
+          </div>
+        </div>
+        <p>In this example, we obtain the current date and time, then format it using different formats defined by the format codes.</p>
+      </div>
+    </article>
+  </div>
+  <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
 </body>
 
 </html>
