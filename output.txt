@@ -1,1 +1,3 @@
-2024-10-13 20:01:17.722205: User logged in successfully.
+Enter a date (YYYY-MM-DD): 2024-10-11
+Successfully parsed date: 2024-10-11
+
