@@ -109,6 +109,8 @@ img {
 
 .toc-page {
   white-space: nowrap;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .toc-subpage {
@@ -125,9 +127,6 @@ img {
 /* ===========================================================
    COMMON STYLES
    =========================================================== */
-.block {
-  margin-left: 20px;
-}
 
 .content-article {
   margin-left: 20px;
@@ -147,20 +146,39 @@ img {
 
 @media print {
   @page {
-  size: A4; /* Set page size to A4 */
-  margin: 16mm; /* Set margins */
-  @bottom-right {
-    content: "page no. " counter(page); /* Page number content */
-    font-weight: bold; /* Make the page number bold */
-  }
-  @bottom-left {
-    content: "Comprehensive Python Manual: Date, Time, and Calendar Modules"; /* Footer content */
-    font-style: italic; /* Italic style for the footer */
-    font-weight: bold; /* Make the footer text bold */
-  }
-}
+    size: A4;
+    /* Set page size to A4 */
+    margin: 16mm;
 
+    /* Set margins */
+    @bottom-right {
+      content: counter(page);
+      /* Page number content */
+      font-weight: bold;
+      /* Make the page number bold */
+    }
 
+    @bottom-left {
+      content: "Comprehensive Python Manual: Date, Time, and Calendar Modules";
+      /* Footer content */
+      font-style: italic;
+      /* Italic style for the footer */
+      font-weight: bold;
+      /* Make the footer text bold */
+    }
+  }
+  
+  @page:first {
+    @bottom-left {
+      content: none;
+    }
+  }
+  
+  @page:nth(2) {
+    @bottom-left {
+      content: none;
+    }
+  }
 
   body {
     font-family: Arial, sans-serif;
