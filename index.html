@@ -1,1831 +1,2054 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <title>HTML</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <div class="toc">
-    <h2 class="toc-h">Table of Contents</h2>
-    <div class="toc-c">
-      <ol>
-        <li>
-          <div class="toc-item">
-            <div class="toc-title"><b>1. Introduction</b></div>
-            <div class="toc-dots"></div>
-            <div class="toc-page">3</div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">1.1 Importance of Date and Time</div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage">3</div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">1.2 Real-World Use Cases</div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage">3</div>
-              </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle">
-              <b>2. The <i>time</i> Module</b>
+  <body>
+    <div class="toc">
+      <h2 class="toc-h">Table of Contents</h2>
+      <div class="toc-c">
+        <ol>
+          <li>
+            <div class="toc-item">
+              <div class="toc-title"><b>1. Introduction</b></div>
+              <div class="toc-dots"></div>
+              <div class="toc-page">3</div>
             </div>
-            <div class="toc-dots"></div>
-            <div class="toc-page">4 - 8</div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">2.1 Introduction and Use Cases</div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage">4</div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  2.2 Retrieving the Current Time (<i>time()</i>)
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">1.1 Importance of Date and Time</div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">3</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage">4</div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  2.3 Measuring Execution Time with <i>time()</i>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">1.2 Real-World Use Cases</div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">3</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage">4 - 5</div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle">
+                <b>2. The <i>time</i> Module</b>
               </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  2.4 Delaying Program Execution (<i>sleep()</i>)
-                </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  2.5 Formatting Time into Readable Strings (<i>ctime()</i>)
-                </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  2.6 Converting to UTC and Local Time (<i>gmtime()</i> and
-                  <i>localtime()</i>)
-                </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  2.7 Converting Timestamps to <i>struct_time</i> and Back (<i>mktime()</i>
-                  and <i>asctime()</i>)
-                </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage">7 - 8</div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  2.8 Example: Timing a Function's Execution
-                </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage">14</div>
-              </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle">
-              <b>3. The <i>datetime</i> Module</b>
+              <div class="toc-dots"></div>
+              <div class="toc-page">4</div>
             </div>
-            <div class="toc-dots"></div>
-            <div class="toc-page"></div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  3.1 Understanding <i>datetime</i> Class Hierarchy
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">2.1 Introduction and Use Cases</div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">4</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  3.2 Creating and Accessing <i>date</i> Objects
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    2.2 Retrieving the Current Time (<i>time()</i>)
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">4</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-              <ol>
-                <li>- Practical Example: Formatting and Validating Dates</li>
-              </ol>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  3.3 Working with <i>time</i> Objects
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    2.3 Measuring Execution Time with <i>time()</i>
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">4</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-              <ol>
-                <li>- Practical Example: Time Formatting</li>
-              </ol>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  3.4 Handling Complete <i>datetime</i> Objects
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    2.4 Delaying Program Execution (<i>sleep()</i>)
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">5</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-              <ol>
-                <li>- Example: Timestamps for Log Entries</li>
-              </ol>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  3.5 Time Arithmetic with <i>timedelta</i>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    2.5 Formatting Time into Readable Strings (<i>ctime()</i>)
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">6</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  3.6 Handling Time Zones with <i>pytz</i>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    2.6 Converting to UTC and Local Time (<i>gmtime()</i> and
+                    <i>localtime()</i>)
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">6</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="tox-subpage"></div>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    2.7 Converting Timestamps to <i>struct_time</i> and Back (<i
+                      >mktime()</i
+                    >
+                    and <i>asctime()</i>)
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">7</div>
+                </div>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    2.8 Example: Timing a Function's Execution
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">8</div>
+                </div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle">
+                <b>3. The <i>datetime</i> Module</b>
               </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle">
-              <b>4. Fetching the Current Date and Time</b>
+              <div class="toc-dots"></div>
+              <div class="toc-page">9</div>
             </div>
-            <div class="toc-dots"></div>
-            <div class="toc-page"></div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  4.1 Using <i>datetime.now()</i> and <i>datetime.today()</i>
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    3.1 Understanding <i>datetime</i> Class Hierarchy
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">9</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  4.2 Combining <i>date</i> and <i>time</i> Objects
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    3.2 Creating and Accessing <i>date</i> Objects
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">9</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  4.3 Example: Timestamping Data Entries
+                <ol>
+                  <li>- Practical Example: Formatting and Validating Dates</li>
+                </ol>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    3.3 Working with <i>time</i> Objects
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">10</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
+                <ol>
+                  <li>- Practical Example: Time Formatting</li>
+                </ol>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    3.4 Handling Complete <i>datetime</i> Objects
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">12</div>
+                </div>
+                <ol>
+                  <li>- Example: Timestamps for Log Entries</li>
+                </ol>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    3.5 Time Arithmetic with <i>timedelta</i>
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">13</div>
+                </div>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    3.6 Handling Time Zones with <i>pytz</i>
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="tox-subpage">14</div>
+                </div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle">
+                <b>4. Fetching the Current Date and Time</b>
               </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle">
-              <b>5. Formatting and Parsing Dates and Times</b>
+              <div class="toc-dots"></div>
+              <div class="toc-page">15</div>
             </div>
-            <div class="toc-dots"></div>
-            <div class="toc-page"></div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  5.1 Using <i>strftime()</i> to Format Date/Tim
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    4.1 Using <i>datetime.now()</i> and <i>datetime.today()</i>
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">15</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  5.2 Parsing Strings into Dates with <i>strptime()</i>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    4.2 Combining <i>date</i> and <i>time</i> Objects
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">16</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  5.3 Example: Validating User Inputs
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    4.3 Example: Timestamping Data Entries
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">16</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle">
+                <b>5. Formatting and Parsing Dates and Times</b>
               </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle">
-              <b>6. Comparing and Sorting Dates</b>
+              <div class="toc-dots"></div>
+              <div class="toc-page">18</div>
             </div>
-            <div class="toc-dots"></div>
-            <div class="toc-page"></div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">6.1 Date Comparison Operations</div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  6.2 Example: Sorting Events by Date
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    5.1 Using <i>strftime()</i> to Format Date/Tim
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">18</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    5.2 Parsing Strings into Dates with <i>strptime()</i>
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">19</div>
+                </div>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    5.3 Example: Validating User Inputs
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">19</div>
+                </div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle">
+                <b>6. Comparing and Sorting Dates</b>
               </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle">
-              <b>7. Date Arithmetic and Time Intervals</b>
+              <div class="toc-dots"></div>
+              <div class="toc-page">21</div>
             </div>
-            <div class="toc-dots"></div>
-            <div class="toc-page"></div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  7.1 Using <i>timedelta</i> for Date Arithmetic
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">6.1 Date Comparison Operations</div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">21</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  7.2 Example: Countdown to a Future Event
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    6.2 Example: Sorting Events by Date
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">22</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle">
+                <b>7. Date Arithmetic and Time Intervals</b>
               </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle">
-              <b>8. Measuring Program Execution Time</b>
+              <div class="toc-dots"></div>
+              <div class="toc-page">23</div>
             </div>
-            <div class="toc-dots"></div>
-            <div class="toc-page"></div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  8.1 Performance Testing with <i>time</i> and <i>datetime</i>
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    7.1 Using <i>timedelta</i> for Date Arithmetic
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">23</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  8.2 Example: Benchmarking Code Blocks
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    7.2 Example: Countdown to a Future Event
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">24</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subapge"></div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle">
+                <b>8. Measuring Program Execution Time</b>
               </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle">
-              <b>9. The <i>calendar</i> Module</b>
+              <div class="toc-dots"></div>
+              <div class="toc-page">26</div>
             </div>
-            <div class="toc-dots"></div>
-            <div class="toc-page"></div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  9.1 Introduction to Calendar Functions
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    8.1 Performance Testing with <i>time</i> and <i>datetime</i>
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">26</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  9.2 Generating Month and Year Calendars
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    8.2 Example: Benchmarking Code Blocks
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subapge">27</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle">
+                <b>9. The <i>calendar</i> Module</b>
               </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">9.3 Checking Leap Year</div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">9.4 Weekday and Month Constants</div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  9.5 Example: Scheduling Events on Weekdays
-                </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle">
-              <b>10. Error Handling in Date/Time Operations</b>
+              <div class="toc-dots"></div>
+              <div class="toc-page">29</div>
             </div>
-            <div class="toc-dots"></div>
-            <div class="toc-page"></div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  10.1 Validating User Inputs and Parsing Error
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    9.1 Introduction to Calendar Functions
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">29</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  10.2 Example: Correctly Handling Invalid Dates
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    9.2 Generating Month and Year Calendars
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">29</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle"><b>11. Practical Applications</b></div>
-            <div class="toc-dots"></div>
-            <div class="toc-page"></div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  11.1 Scheduling, Logging, and Event Management
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">9.3 Checking Leap Year</div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">31</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  11.2 Example: Automating Task Scheduling
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">9.4 Weekday and Month Constants</div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">32</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle"><b>12. Conclusion</b></div>
-            <div class="toc-dots"></div>
-            <div class="toc-page"></div>
-          </div>
-          <ol>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  12.1 Best Practices for Date and Time Handling in Python
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    9.5 Example: Scheduling Events on Weekdays
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">33</div>
                 </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle">
+                <b>10. Error Handling in Date/Time Operations</b>
               </div>
-            </li>
-            <li>
-              <div class="toc-item">
-                <div class="toc-tittle">
-                  12.2 Summary of Important Functions
-                </div>
-                <div class="toc-dots"></div>
-                <div class="toc-subpage"></div>
-              </div>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <div class="toc-item">
-            <div class="toc-tittle">
-              <b>13. References and Further Reading</b>
+              <div class="toc-dots"></div>
+              <div class="toc-page">35</div>
             </div>
-            <div class="toc-dots"></div>
-            <div class="toc-page"></div>
-          </div>
-        </li>
-      </ol>
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    10.1 Validating User Inputs and Parsing Error
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">35</div>
+                </div>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    10.2 Example: Correctly Handling Invalid Dates
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">35</div>
+                </div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle"><b>11. Practical Applications</b></div>
+              <div class="toc-dots"></div>
+              <div class="toc-page">37</div>
+            </div>
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    11.1 Scheduling, Logging, and Event Management
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">37</div>
+                </div>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    11.2 Example: Automating Task Scheduling
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">37</div>
+                </div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle"><b>12. Conclusion</b></div>
+              <div class="toc-dots"></div>
+              <div class="toc-page">40</div>
+            </div>
+            <ol>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    12.1 Best Practices for Date and Time Handling in Python
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">40</div>
+                </div>
+              </li>
+              <li>
+                <div class="toc-item">
+                  <div class="toc-tittle">
+                    12.2 Summary of Important Functions
+                  </div>
+                  <div class="toc-dots"></div>
+                  <div class="toc-subpage">41</div>
+                </div>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <div class="toc-item">
+              <div class="toc-tittle">
+                <b>13. References and Further Reading</b>
+              </div>
+              <div class="toc-dots"></div>
+              <div class="toc-page">42</div>
+            </div>
+          </li>
+        </ol>
+      </div>
     </div>
-  </div>
 
-  <div class="block page-break">
-    <h1>1. Introduction</h1>
-    <article>
-      <h2>1.1 Importance of Date and Time in Programming</h2>
-      <div class="content-article">
-        <p>
-          In nearly every real-world application, working with dates and times
-          is essential. Whether it's generating logs, scheduling tasks, or
-          performing time-sensitive calculations, effective date and time
-          management is crucial for ensuring correctness in code.
-        </p>
-        <p>In Python, three powerful modules help us handle these aspects:</p>
-        <div class="subpoints">
+    <div class="block page-break">
+      <h1>1. Introduction</h1>
+      <article>
+        <h2>1.1 Importance of Date and Time in Programming</h2>
+        <div class="content-article">
           <p>
-            - <i><b>time</b></i> : Provides simple methods for interacting
-            with time-based functionality such as measuring elapsed time,
-            delaying execution, or converting timestamps to human-readable
-            formats.
+            In nearly every real-world application, working with dates and times
+            is essential. Whether it's generating logs, scheduling tasks, or
+            performing time-sensitive calculations, effective date and time
+            management is crucial for ensuring correctness in code.
+          </p>
+          <p>In Python, three powerful modules help us handle these aspects:</p>
+          <div class="subpoints">
+            <p>
+              - <i><b>time</b></i> : Provides simple methods for interacting
+              with time-based functionality such as measuring elapsed time,
+              delaying execution, or converting timestamps to human-readable
+              formats.
+            </p>
+            <p>
+              - <i><b>datetime</b></i> : Extends functionality to handle dates
+              and times at a more granular level, allowing precise operations,
+              including parsing, formatting, and manipulating dates and times.
+            </p>
+            <p>
+              - <i><b>calendar</b></i> : Specializes in calendar-based
+              operations, such as determining weekdays, checking leap years, or
+              generating calendar grids.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>1.2 Real-World Use Cases</h2>
+        <div class="content-article">
+          <p>
+            1. <b>Logging</b> : Recording timestamps to track when specific
+            events occur.
           </p>
           <p>
-            - <i><b>datetime</b></i> : Extends functionality to handle dates
-            and times at a more granular level, allowing precise operations,
-            including parsing, formatting, and manipulating dates and times.
+            2. <b>Scheduling</b> : Automating tasks to run at specific intervals
+            or dates.
           </p>
           <p>
-            - <i><b>calendar</b></i> : Specializes in calendar-based
-            operations, such as determining weekdays, checking leap years, or
-            generating calendar grids.
+            3. <b>Deadlines</b> : Calculating the number of days between two
+            dates or determining future deadlines.
+          </p>
+          <p>
+            4. <b>User Input Validation</b> : Ensuring user-supplied dates and
+            times are in the correct format.
           </p>
         </div>
-      </div>
-    </article>
-    <article>
-      <h2>1.2 Real-World Use Cases</h2>
-      <div class="content-article">
-        <p>
-          1. <b>Logging</b> : Recording timestamps to track when specific
-          events occur.
-        </p>
-        <p>
-          2. <b>Scheduling</b> : Automating tasks to run at specific intervals
-          or dates.
-        </p>
-        <p>
-          3. <b>Deadlines</b> : Calculating the number of days between two
-          dates or determining future deadlines.
-        </p>
-        <p>
-          4. <b>User Input Validation</b> : Ensuring user-supplied dates and
-          times are in the correct format.
-        </p>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>2. The <i>time</i> Module</h1>
-    <article>
-      <h2>2.1 Introduction and Use Cases</h2>
-      <div class="content-article">
-        <p>
-          The <i>time</i> module in Python is a low-level module that provides
-          basic time-related functionality. This module allows us to:
-        </p>
-        <div class="subpoints">
-          <p>- Measure the current time in seconds since the Unix epoch.</p>
-          <p>- Convret timestamps into human-readable formats.</p>
-          <p>- Measure elapsed time during code execution.</p>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>2. The <i>time</i> Module</h1>
+      <article>
+        <h2>2.1 Introduction and Use Cases</h2>
+        <div class="content-article">
           <p>
-            - Sleep (pause) program execution for a specified number of
-            seconds.
+            The <i>time</i> module in Python is a low-level module that provides
+            basic time-related functionality. This module allows us to:
           </p>
+          <div class="subpoints">
+            <p>- Measure the current time in seconds since the Unix epoch.</p>
+            <p>- Convret timestamps into human-readable formats.</p>
+            <p>- Measure elapsed time during code execution.</p>
+            <p>
+              - Sleep (pause) program execution for a specified number of
+              seconds.
+            </p>
+          </div>
         </div>
-      </div>
-    </article>
-    <article>
-      <h2>2.2 Retrieving the Current Time (<i>time()</i>)</h2>
-      <div class="content-article">
-        <p>
-          The <i>time.time()</i> function returns the number of seconds since
-          the epoch (Unix timestamp). This is useful when you need to record a
-          point in time or calculate the duration between events.
-        </p>
+      </article>
+      <article>
+        <h2>2.2 Retrieving the Current Time (<i>time()</i>)</h2>
+        <div class="content-article">
+          <p>
+            The <i>time.time()</i> function returns the number of seconds since
+            the epoch (Unix timestamp). This is useful when you need to record a
+            point in time or calculate the duration between events.
+          </p>
 
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code1.png" alt="code sinppet 1" />
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code1.png" alt="code sinppet 1" />
+            </div>
+            <div class="output">
+              <span><b>Output </b> :</span>
+              <img src="images/output1.png" alt="code output 1" />
+            </div>
           </div>
-          <div class="output">
-            <span><b>Output </b> :</span>
-            <img src="images/output1.png" alt="code output 1" />
-          </div>
-        </div>
-        <p>
-          The output represents the number of seconds that have passed since
-          January 1, 1970 (the Unix epoch). You can store this timestamp for
-          future reference and convert it to human-readable formats later.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>2.3 Measuring Execution Time with <i>time()</i></h2>
-      <div class="content-article">
-        <p>
-          If you want to measure how long a certain block of code takes to
-          execute, you can record the time at the start and end of execution,
-          then calculate the difference.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code2.png" alt="code snippet 2" />
-          </div>
-          <div class="output">
-            <span><b>Output </b> :</span>
-            <img src="images/output2.png" alt="code output 2" />
-          </div>
-        </div>
-        <p>
-          This demonstrates how to use <i>time()</i> to measure the execution
-          duration of a code block. You can use this technique for performance
-          benchmarking in your code.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>2.4 Delaying Program Execution (<i>sleep()</i>)</h2>
-      <div class="content-article">
-        <p>
-          The <i>time.sleep(seconds)</i> function pauses the execution of the
-          program for the specified number of seconds. This is particularly
-          useful when you want to introduce delays or space out requests in
-          time-sensitive operations like web scraping or API requests.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code3.png" alt="code snippet 3" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> : </span>
-            <img src="images/output3.png" alt="code output 3" />
-          </div>
-        </div>
-        <p>
-          In this example, the program pauses for 3 seconds before resuming
-          execution. This can be useful for implementing retries,
-          rate-limiting, or pacing long-running processes.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>2.5 Formatting Time into Readable Strings (<i>ctime()</i>)</h2>
-      <div class="content-article">
-        <p>
-          The <i>time.ctime()</i> function converts a timestamp into a
-          human-readable string format. It’s a quick and simple way to format
-          the output of <i>time()</i> for readability.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code4.png" alt="code snippet 4" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> : </span>
-            <img src="images/output4.png" alt="code output 4" />
-          </div>
-        </div>
-        <p>
-          This function provides a simple way to convert the Unix timestamp to
-          a more readable string format, which is useful for logging or
-          displaying timestamps in reports.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>
-        2.6 Converting to UTC and Local Time (<i>gmtime()</i> and
-        <i>localtime()</i>)
-      </h2>
-      <div class="content-article">
-        <p>
-          The <i>time.gmtime()</i> function converts a timestamp into UTC
-          (Coordinated Universal Time), while <i>time.localtime()</i> converts
-          it into the local time of your system.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code5.png" alt="code snippet 5" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output5.png" alt="code output 5" />
-          </div>
-        </div>
-        <p>
-          This example illustrates how to convert a timestamp into both UTC
-          and local time, depending on your needs. You can further customize
-          the formatting using <i>strftime()</i>.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>
-        2.7 Converting Timestamps to <i>struct_time</i> and Back (<i>mktime()</i>
-        and <i>asctime()</i>)
-      </h2>
-      <div class="content-article">
-        <p>
-          - <b><i>mktime()</i></b> : Converts a <i>struct_time</i> object back
-          into a timestamp.
-        </p>
-        <p>
-          - <b><i>asctime()</i></b> : Converts a <i>struct_time</i> object
-          into a human-readable string.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code6.png" alt="code snippet 6" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output6.png" alt="code output 6" />
-          </div>
-        </div>
-        <p>
-          These functions allow for conversion between different
-          representations of time, enabling flexible handling of time data.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>2.8 Example: Timing a Function's Execution</h2>
-      <div class="content-article">
-        <p>
-          This example demonstrates how to time a function’s execution using
-          the <i>time()</i> function.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code7.png" alt="code snippet 7" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output7.png" alt="code output 7" />
-          </div>
-        </div>
-        <p>
-          This practical example is useful when you need to benchmark or
-          optimize the performance of specific parts of your code.
-        </p>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>3. The <i>datetime</i> Module</h1>
-    <p>
-      The <i>datetime</i> module in Python is a powerful and versatile module
-      that provides classes for manipulating dates and times. Understanding
-      its structure is essential for effectively working with date and time
-      data in your applications.
-    </p>
-    <article>
-      <h2>3.1 Understanding <i>datetime</i> Class Hierarchy</h2>
-      <div class="content-article">
-        <p>The <i>datetime</i> module includes several key classes:</p>
-        <div class="subpoints">
           <p>
-            - <b><i>date</i></b> : Represents a date (year, month, day)
-            without time.
-          </p>
-          <p>
-            - <b><i>time</i></b> : Represents a time (hour, minute, second,
-            microsecond) without date.
-          </p>
-          <p>
-            - <b><i>datetime</i></b> : Combines both date and time into a
-            single object.
-          </p>
-          <p>
-            - <b><i>timedelta</i></b> : Represents a duration, the difference
-            between two dates or times.
-          </p>
-          <p>
-            - <b><i>tzinfo</i></b> : Base class for dealing with time zones.
+            The output represents the number of seconds that have passed since
+            January 1, 1970 (the Unix epoch). You can store this timestamp for
+            future reference and convert it to human-readable formats later.
           </p>
         </div>
-      </div>
-    </article>
-    <article>
-      <h2>3.2 Creating and Accessing <i>date</i> Objects</h2>
-      <div class="content-article">
-        <p>
-          You can create a <i>date</i> object using the <i>date</i> class,
-          specifying the year, month, and day.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Creating and Accessing <i>date</i></b></span>
-            <img src="images/code8.png" alt="code snippet 8" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output8.png" alt="code output 8" />
-          </div>
-        </div>
-        <p>
-          In this example, we create a <i>date</i> object and access its
-          individual components (year, month, day).
-        </p>
-        <div class="code-snippet">
-          <span><b>- Practical Example: Formatting and Validating Dates</b></span>
-          <span>Formatting dates for display or validation is a common
-            task.</span>
-          <div class="code">
-            <span><b>Example: Formatting a Date</b></span>
-            <img src="images/code9.png" alt="code snippet 9" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output9.png" alt="code output 9" />
-          </div>
-        </div>
-        <p>
-          Here, we format the <i>date</i> object into a more human-readable
-          format using <i>strftime</i>.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>3.3 Working with <i>time</i> Objects</h2>
-      <div class="content-article">
-        <p>
-          A <i>time</i> object represents only the time component (hours,
-          minutes, seconds, and microseconds).
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Creating and Accessing <i>time</i> Objects</b></span>
-            <img src="images/code10.png" alt="code snippet 10" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output10.png" alt="code output 10" />
-          </div>
-        </div>
-        <p>
-          This example shows how to create a <i>time</i> object and access its
-          components.
-        </p>
-        <div class="code-snippet">
-          <span><b> - Practical Example: Time Formatting </b></span>
-          <span>
-            You might need to format time for logging or display purposes.
-          </span>
-          <div class="code">
-            <span><b> Example: Formatting a Time Object </b></span>
-            <img src="images/code11.png" alt="code snippet 11" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output11.png" alt="code output 11" />
-          </div>
-        </div>
-        <p>
-          In this example, we use <i> strftime </i> to format the
-          <i> time </i> object.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>3.4 Handling Complete <i>datetime</i> Objects</h2>
-      <div class="content-article">
-        <p>
-          A <i>datetime</i> object combines both date and time information.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Creating and Accessing <i>datetime</i> Objects</b></span>
-            <img src="images/code12.png" alt="code snippet 12" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output12.png" alt="code output 12" />
-          </div>
-        </div>
-        <p>
-          This example demonstrates how to create a <i>datetime</i> object and
-          access its components.
-        </p>
-        <div class="code-snippet">
-          <span><b>- Practical example: Timestamps for Log Entries</b></span>
-          <span>Timestamping log entries is essential for tracking events.</span>
-          <div class="code">
-            <span><b>Example: Timestamping a Log Entry</b></span>
-            <img src="images/code13.png" alt="code snippet 13" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output13.png" alt="code output 13" />
-          </div>
-        </div>
-        <p>
-          This function logs messages with timestamps, which is a common
-          requirement in applications.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>3.5 Time Arithmetic with <i>timedelta</i></h2>
-      <div class="content-article">
-        <p>
-          The <i>timedelta</i> class represents the difference between two
-          <i>datetime</i> objects, allowing you to perform arithmetic
-          operations with dates and times.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Using <i>timedelta</i></b></span>
-            <img src="images/code14.png" alt="code snippet 14" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output14.png" alt="code output 14" />
-          </div>
-        </div>
-        <p>
-          In this example, we demonstrate how to add and subtract days from
-          the current date using <i>timedelta</i>.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>3.6 Handling Time Zones with <i>pytz</i></h2>
-      <div class="content-article">
-        <p>
-          To work with time zones in Python, we commonly use the
-          <i>pytz</i> library. This library allows for accurate and reliable
-          time zone calculations.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Working with Time Zones</b></span>
-            <img src="images/code15.png" alt="code snippet 15" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output15.png" alt="code output 15" />
-          </div>
-        </div>
-        <p>
-          In this example, we create a UTC timezone-aware datetime object and
-          convert it to the US Eastern time zone.
-        </p>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>4. Fetching the Current Date and Time</h1>
-    <p>
-      Working with the current date and time is a common requirement in many
-      applications. Python's <i>datetime</i> module offers several ways to
-      fetch this information, primarily through the use of
-      <i>datetime.now()</i> and <i>datetime.today()</i>. Both methods return
-      the current date and time, but there are slight differences in their
-      usage.
-    </p>
-    <article>
-      <h2>4.1 Using datetime.now() and datetime.today()</h2>
-      <div class="content-article">
-        <p>
-          The <i>datetime.now()</i> method returns the current local date and
-          time as a <i>datetime</i> object. It can also accept an optional
-          <i>tz</i> argument to return the current date and time in a specific
-          time zone.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Using <i>datetime.now()</i></b></span>
-            <img src="images/code16.png" alt="code snippet 16" />
-          </div>
-          <div class="output">
-            <span><b>Output</b></span>
-            <img src="images/output16.png" alt="code output 16" />
-          </div>
-        </div>
-        <p>
-          In this example, <i>datetime.now()</i> retrieves the current local
-          date and time, which includes microseconds.
-        </p>
-        <p>
-          The <i>datetime.today()</i> method also returns the current local
-          date and time but without the option for timezone specification. It
-          effectively serves the same purpose as <i>datetime.now()</i> when
-          used without any arguments.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Using <i>datetime.today()</i></b></span>
-            <img src="images/code17.png" alt="code snippet 17" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output17.png" alt="code output 17" />
-          </div>
-        </div>
-        <p>
-          Both methods will return similar results. The key difference is that
-          <i>datetime.now()</i> is more versatile due to its timezone support.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>4.2 Combining <i>date</i> and <i>time</i> Objects</h2>
-      <div class="content-article">
-        <p>
-          Sometimes, you may need to combine a <i>date</i> object and a
-          <i>time</i> object into a single <i>datetime</i> object. This can be
-          particularly useful when working with data that has separate date
-          and time fields.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Combining <i>date</i> and <i>time</i></b></span>
-            <img src="images/code18.png" alt="code snippet 18" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output18.png" alt="code output 18" />
-          </div>
-        </div>
-        <p>
-          In this example, we create a <i>date</i> object representing October
-          11, 2024, and a <i>time</i> object representing 10:30:45. We then
-          combine them using the <i>datetime.combine()</i> method, resulting
-          in a <i>datetime</i> object.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>4.3 Example: Timestamping Data Entries</h2>
-      <div class="content-article">
-        <p>
-          Combining these concepts, let’s consider an example where we
-          timestamp data entries for a log file or database entry. This could
-          be useful for tracking when a specific event occurred.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code19.png" alt="code snippet 19" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output19.png" alt="code output 19" />
-          </div>
-        </div>
-        <p>
-          In this example, the <i>log_data_entry</i> function fetches the
-          current date and time, formats it with a custom message, and returns
-          the log message. This practice is common in applications where
-          tracking events with accurate timestamps is crucial.
-        </p>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>5. Formatting and Parsing Dates and Times</h1>
-    <article>
-      <h2>5.1 Using strftime() to Format Date/Time</h2>
-      <div class="content-article">
-        <p>
-          The <i>strftime()</i> method is used to convert
-          <i>datetime</i> objects into formatted strings. This method allows
-          you to specify how you want the date and time to be represented. You
-          can include various format codes to customize the output.
-        </p>
-        <p>
-          <b><i>Common Format Codes </i>:</b>
-        </p>
-        <div class="subpoints">
+      </article>
+      <article>
+        <h2>2.3 Measuring Execution Time with <i>time()</i></h2>
+        <div class="content-article">
           <p>
-            - <b><i>%Y</i></b> : Year with century (e.g., 2024)
+            If you want to measure how long a certain block of code takes to
+            execute, you can record the time at the start and end of execution,
+            then calculate the difference.
           </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code2.png" alt="code snippet 2" />
+            </div>
+            <div class="output">
+              <span><b>Output </b> :</span>
+              <img src="images/output2.png" alt="code output 2" />
+            </div>
+          </div>
           <p>
-            - <b><i>%y</i></b> : Year without century (00-99)
-          </p>
-          <p>
-            - <b><i>%m</i></b> : Month as a zero-padded decimal number (01-12)
-          </p>
-          <p>
-            - <b><i>%d</i></b> : Day of the month as a zero-padded decimal
-            number (01-31)
-          </p>
-          <p>
-            - <b><i>%H</i></b> : Hour (24-hour clock) as a zero-padded decimal
-            number (00-23)
-          </p>
-          <p>
-            - <b><i>%M</i></b> : Minute as a zero-padded decimal number
-            (00-59)
-          </p>
-          <p>
-            - <b><i>%S</i></b> : Second as a zero-padded decimal number
-            (00-59)
-          </p>
-          <p>
-            - <b><i>%A</i></b> : Weekday as a full name (e.g., Monday)
-          </p>
-          <p>
-            - <b><i>%B</i></b> : Month as a full name (e.g., January)
+            This demonstrates how to use <i>time()</i> to measure the execution
+            duration of a code block. You can use this technique for performance
+            benchmarking in your code.
           </p>
         </div>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Formatting Dates and Times</b></span>
-            <img src="images/code20.png" alt="code snippet 20" />
+      </article>
+      <article>
+        <h2>2.4 Delaying Program Execution (<i>sleep()</i>)</h2>
+        <div class="content-article">
+          <p>
+            The <i>time.sleep(seconds)</i> function pauses the execution of the
+            program for the specified number of seconds. This is particularly
+            useful when you want to introduce delays or space out requests in
+            time-sensitive operations like web scraping or API requests.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code3.png" alt="code snippet 3" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> : </span>
+              <img src="images/output3.png" alt="code output 3" />
+            </div>
           </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output20.png" alt="code output 20" />
+          <p>
+            In this example, the program pauses for 3 seconds before resuming
+            execution. This can be useful for implementing retries,
+            rate-limiting, or pacing long-running processes.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>2.5 Formatting Time into Readable Strings (<i>ctime()</i>)</h2>
+        <div class="content-article">
+          <p>
+            The <i>time.ctime()</i> function converts a timestamp into a
+            human-readable string format. It’s a quick and simple way to format
+            the output of <i>time()</i> for readability.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code4.png" alt="code snippet 4" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> : </span>
+              <img src="images/output4.png" alt="code output 4" />
+            </div>
+          </div>
+          <p>
+            This function provides a simple way to convert the Unix timestamp to
+            a more readable string format, which is useful for logging or
+            displaying timestamps in reports.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>
+          2.6 Converting to UTC and Local Time (<i>gmtime()</i> and
+          <i>localtime()</i>)
+        </h2>
+        <div class="content-article">
+          <p>
+            The <i>time.gmtime()</i> function converts a timestamp into UTC
+            (Coordinated Universal Time), while <i>time.localtime()</i> converts
+            it into the local time of your system.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code5.png" alt="code snippet 5" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output5.png" alt="code output 5" />
+            </div>
+          </div>
+          <p>
+            This example illustrates how to convert a timestamp into both UTC
+            and local time, depending on your needs. You can further customize
+            the formatting using <i>strftime()</i>.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>
+          2.7 Converting Timestamps to <i>struct_time</i> and Back (<i
+            >mktime()</i
+          >
+          and <i>asctime()</i>)
+        </h2>
+        <div class="content-article">
+          <p>
+            - <b><i>mktime()</i></b> : Converts a <i>struct_time</i> object back
+            into a timestamp.
+          </p>
+          <p>
+            - <b><i>asctime()</i></b> : Converts a <i>struct_time</i> object
+            into a human-readable string.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code6.png" alt="code snippet 6" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output6.png" alt="code output 6" />
+            </div>
+          </div>
+          <p>
+            These functions allow for conversion between different
+            representations of time, enabling flexible handling of time data.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>2.8 Example: Timing a Function's Execution</h2>
+        <div class="content-article">
+          <p>
+            This example demonstrates how to time a function’s execution using
+            the <i>time()</i> function.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code7.png" alt="code snippet 7" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output7.png" alt="code output 7" />
+            </div>
+          </div>
+          <p>
+            This practical example is useful when you need to benchmark or
+            optimize the performance of specific parts of your code.
+          </p>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>3. The <i>datetime</i> Module</h1>
+      <p>
+        The <i>datetime</i> module in Python is a powerful and versatile module
+        that provides classes for manipulating dates and times. Understanding
+        its structure is essential for effectively working with date and time
+        data in your applications.
+      </p>
+      <article>
+        <h2>3.1 Understanding <i>datetime</i> Class Hierarchy</h2>
+        <div class="content-article">
+          <p>The <i>datetime</i> module includes several key classes:</p>
+          <div class="subpoints">
+            <p>
+              - <b><i>date</i></b> : Represents a date (year, month, day)
+              without time.
+            </p>
+            <p>
+              - <b><i>time</i></b> : Represents a time (hour, minute, second,
+              microsecond) without date.
+            </p>
+            <p>
+              - <b><i>datetime</i></b> : Combines both date and time into a
+              single object.
+            </p>
+            <p>
+              - <b><i>timedelta</i></b> : Represents a duration, the difference
+              between two dates or times.
+            </p>
+            <p>
+              - <b><i>tzinfo</i></b> : Base class for dealing with time zones.
+            </p>
           </div>
         </div>
-        <p>
-          In this example, we obtain the current date and time, then format it
-          using different formats defined by the format codes.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>5.2 Parsing Strings into Dates with <i>strptime()</i></h2>
-      <div class="content-atricle">
-        <p>
-          The <i>strptime()</i> method is used to convert strings into
-          <i>datetime</i> objects, allowing you to interpret user input or
-          string data as date and time. This is particularly useful for
-          validating and processing date and time strings.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Parsing Dates from Strings</b></span>
-            <img src="images/code21.png" alt="code snippet 21" />
+      </article>
+      <article>
+        <h2>3.2 Creating and Accessing <i>date</i> Objects</h2>
+        <div class="content-article">
+          <p>
+            You can create a <i>date</i> object using the <i>date</i> class,
+            specifying the year, month, and day.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <span
+                ><b>Example: Creating and Accessing <i>date</i></b></span
+              >
+              <img src="images/code8.png" alt="code snippet 8" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output8.png" alt="code output 8" />
+            </div>
           </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output21.png" alt="code output 21" />
+          <p>
+            In this example, we create a <i>date</i> object and access its
+            individual components (year, month, day).
+          </p>
+          <div class="code-snippet">
+            <span
+              ><b>- Practical Example: Formatting and Validating Dates</b></span
+            >
+            <span
+              >Formatting dates for display or validation is a common
+              task.</span
+            >
+            <div class="code">
+              <span><b>Example: Formatting a Date</b></span>
+              <img src="images/code9.png" alt="code snippet 9" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output9.png" alt="code output 9" />
+            </div>
           </div>
+          <p>
+            Here, we format the <i>date</i> object into a more human-readable
+            format using <i>strftime</i>.
+          </p>
         </div>
-        <p>
-          In this example, we parse a date string that represents a date and
-          time, converting it into a <i>datetime</i> object.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>5.3 Example: Validating User Inputs</h2>
-      <div class="content-article">
-        <p>
-          When building applications, you often need to validate user inputs,
-          especially when accepting date and time entries. Here’s how you can
-          do this using <i>strptime()</i>.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: User Input Validation for Date</b></span>
-            <img src="images/code22.png" alt="code snippet 22" />
+      </article>
+      <article>
+        <h2>3.3 Working with <i>time</i> Objects</h2>
+        <div class="content-article">
+          <p>
+            A <i>time</i> object represents only the time component (hours,
+            minutes, seconds, and microseconds).
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <span
+                ><b
+                  >Example: Creating and Accessing <i>time</i> Objects</b
+                ></span
+              >
+              <img src="images/code10.png" alt="code snippet 10" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output10.png" alt="code output 10" />
+            </div>
           </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output22.png" alt="code output 22" />
+          <p>
+            This example shows how to create a <i>time</i> object and access its
+            components.
+          </p>
+          <div class="code-snippet">
+            <span><b> - Practical Example: Time Formatting </b></span>
+            <span>
+              You might need to format time for logging or display purposes.
+            </span>
+            <div class="code">
+              <span><b> Example: Formatting a Time Object </b></span>
+              <img src="images/code11.png" alt="code snippet 11" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output11.png" alt="code output 11" />
+            </div>
           </div>
+          <p>
+            In this example, we use <i> strftime </i> to format the
+            <i> time </i> object.
+          </p>
         </div>
-        <p>
-          In this example, the function <i>validate_date()</i> attempts to
-          parse the user input. If the format is incorrect, it raises a
-          <i>ValueError</i>, and the user is informed to use the correct
-          format.
-        </p>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>6. Comparing and Sorting Dates</h1>
-    <article>
-      <h2>6.1 Date Comparison Operations</h2>
-      <div class="content-article">
-        <p>
-          In Python, you can compare <i>datetime</i> objects directly using
-          comparison operators like `<`, `<=`, `>`, `>=`, `==`, and `!=`.
+      </article>
+      <article>
+        <h2>3.4 Handling Complete <i>datetime</i> Objects</h2>
+        <div class="content-article">
+          <p>
+            A <i>datetime</i> object combines both date and time information.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <span
+                ><b
+                  >Example: Creating and Accessing <i>datetime</i> Objects</b
+                ></span
+              >
+              <img src="images/code12.png" alt="code snippet 12" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output12.png" alt="code output 12" />
+            </div>
+          </div>
+          <p>
+            This example demonstrates how to create a <i>datetime</i> object and
+            access its components.
+          </p>
+          <div class="code-snippet">
+            <span><b>- Practical example: Timestamps for Log Entries</b></span>
+            <span
+              >Timestamping log entries is essential for tracking events.</span
+            >
+            <div class="code">
+              <span><b>Example: Timestamping a Log Entry</b></span>
+              <img src="images/code13.png" alt="code snippet 13" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output13.png" alt="code output 13" />
+            </div>
+          </div>
+          <p>
+            This function logs messages with timestamps, which is a common
+            requirement in applications.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>3.5 Time Arithmetic with <i>timedelta</i></h2>
+        <div class="content-article">
+          <p>
+            The <i>timedelta</i> class represents the difference between two
+            <i>datetime</i> objects, allowing you to perform arithmetic
+            operations with dates and times.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <span
+                ><b>Example: Using <i>timedelta</i></b></span
+              >
+              <img src="images/code14.png" alt="code snippet 14" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output14.png" alt="code output 14" />
+            </div>
+          </div>
+          <p>
+            In this example, we demonstrate how to add and subtract days from
+            the current date using <i>timedelta</i>.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>3.6 Handling Time Zones with <i>pytz</i></h2>
+        <div class="content-article">
+          <p>
+            To work with time zones in Python, we commonly use the
+            <i>pytz</i> library. This library allows for accurate and reliable
+            time zone calculations.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <span><b>Example: Working with Time Zones</b></span>
+              <img src="images/code15.png" alt="code snippet 15" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output15.png" alt="code output 15" />
+            </div>
+          </div>
+          <p>
+            In this example, we create a UTC timezone-aware datetime object and
+            convert it to the US Eastern time zone.
+          </p>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>4. Fetching the Current Date and Time</h1>
+      <p>
+        Working with the current date and time is a common requirement in many
+        applications. Python's <i>datetime</i> module offers several ways to
+        fetch this information, primarily through the use of
+        <i>datetime.now()</i> and <i>datetime.today()</i>. Both methods return
+        the current date and time, but there are slight differences in their
+        usage.
+      </p>
+      <article>
+        <h2>4.1 Using datetime.now() and datetime.today()</h2>
+        <div class="content-article">
+          <p>
+            The <i>datetime.now()</i> method returns the current local date and
+            time as a <i>datetime</i> object. It can also accept an optional
+            <i>tz</i> argument to return the current date and time in a specific
+            time zone.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <span
+                ><b>Example: Using <i>datetime.now()</i></b></span
+              >
+              <img src="images/code16.png" alt="code snippet 16" />
+            </div>
+            <div class="output">
+              <span><b>Output</b></span>
+              <img src="images/output16.png" alt="code output 16" />
+            </div>
+          </div>
+          <p>
+            In this example, <i>datetime.now()</i> retrieves the current local
+            date and time, which includes microseconds.
+          </p>
+          <p>
+            The <i>datetime.today()</i> method also returns the current local
+            date and time but without the option for timezone specification. It
+            effectively serves the same purpose as <i>datetime.now()</i> when
+            used without any arguments.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <span
+                ><b>Example: Using <i>datetime.today()</i></b></span
+              >
+              <img src="images/code17.png" alt="code snippet 17" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output17.png" alt="code output 17" />
+            </div>
+          </div>
+          <p>
+            Both methods will return similar results. The key difference is that
+            <i>datetime.now()</i> is more versatile due to its timezone support.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>4.2 Combining <i>date</i> and <i>time</i> Objects</h2>
+        <div class="content-article">
+          <p>
+            Sometimes, you may need to combine a <i>date</i> object and a
+            <i>time</i> object into a single <i>datetime</i> object. This can be
+            particularly useful when working with data that has separate date
+            and time fields.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <span
+                ><b>Example: Combining <i>date</i> and <i>time</i></b></span
+              >
+              <img src="images/code18.png" alt="code snippet 18" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output18.png" alt="code output 18" />
+            </div>
+          </div>
+          <p>
+            In this example, we create a <i>date</i> object representing October
+            11, 2024, and a <i>time</i> object representing 10:30:45. We then
+            combine them using the <i>datetime.combine()</i> method, resulting
+            in a <i>datetime</i> object.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>4.3 Example: Timestamping Data Entries</h2>
+        <div class="content-article">
+          <p>
+            Combining these concepts, let’s consider an example where we
+            timestamp data entries for a log file or database entry. This could
+            be useful for tracking when a specific event occurred.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code19.png" alt="code snippet 19" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output19.png" alt="code output 19" />
+            </div>
+          </div>
+          <p>
+            In this example, the <i>log_data_entry</i> function fetches the
+            current date and time, formats it with a custom message, and returns
+            the log message. This practice is common in applications where
+            tracking events with accurate timestamps is crucial.
+          </p>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>5. Formatting and Parsing Dates and Times</h1>
+      <article>
+        <h2>5.1 Using strftime() to Format Date/Time</h2>
+        <div class="content-article">
+          <p>
+            The <i>strftime()</i> method is used to convert
+            <i>datetime</i> objects into formatted strings. This method allows
+            you to specify how you want the date and time to be represented. You
+            can include various format codes to customize the output.
+          </p>
+          <p>
+            <b><i>Common Format Codes </i>:</b>
+          </p>
+          <div class="subpoints">
+            <p>
+              - <b><i>%Y</i></b> : Year with century (e.g., 2024)
+            </p>
+            <p>
+              - <b><i>%y</i></b> : Year without century (00-99)
+            </p>
+            <p>
+              - <b><i>%m</i></b> : Month as a zero-padded decimal number (01-12)
+            </p>
+            <p>
+              - <b><i>%d</i></b> : Day of the month as a zero-padded decimal
+              number (01-31)
+            </p>
+            <p>
+              - <b><i>%H</i></b> : Hour (24-hour clock) as a zero-padded decimal
+              number (00-23)
+            </p>
+            <p>
+              - <b><i>%M</i></b> : Minute as a zero-padded decimal number
+              (00-59)
+            </p>
+            <p>
+              - <b><i>%S</i></b> : Second as a zero-padded decimal number
+              (00-59)
+            </p>
+            <p>
+              - <b><i>%A</i></b> : Weekday as a full name (e.g., Monday)
+            </p>
+            <p>
+              - <b><i>%B</i></b> : Month as a full name (e.g., January)
+            </p>
+          </div>
+          <div class="code-snippet">
+            <div class="code">
+              <span><b>Example: Formatting Dates and Times</b></span>
+              <img src="images/code20.png" alt="code snippet 20" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output20.png" alt="code output 20" />
+            </div>
+          </div>
+          <p>
+            In this example, we obtain the current date and time, then format it
+            using different formats defined by the format codes.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>5.2 Parsing Strings into Dates with <i>strptime()</i></h2>
+        <div class="content-atricle">
+          <p>
+            The <i>strptime()</i> method is used to convert strings into
+            <i>datetime</i> objects, allowing you to interpret user input or
+            string data as date and time. This is particularly useful for
+            validating and processing date and time strings.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <span><b>Example: Parsing Dates from Strings</b></span>
+              <img src="images/code21.png" alt="code snippet 21" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output21.png" alt="code output 21" />
+            </div>
+          </div>
+          <p>
+            In this example, we parse a date string that represents a date and
+            time, converting it into a <i>datetime</i> object.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>5.3 Example: Validating User Inputs</h2>
+        <div class="content-article">
+          <p>
+            When building applications, you often need to validate user inputs,
+            especially when accepting date and time entries. Here’s how you can
+            do this using <i>strptime()</i>.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <span><b>Example: User Input Validation for Date</b></span>
+              <img src="images/code22.png" alt="code snippet 22" />
+            </div>
+            <div class="output">
+              <span><b>Example input/output</b> :</span>
+              <span><b>Case 1</b> :</span>
+              <img src="images/output22.1.png" alt="code output 22.1" />
+              <span><b>Case 2</b> :</span>
+              <img src="images/output22.2.png" alt="code output 22.1.png" />
+            </div>
+          </div>
+          <p>
+            In this example, the function <i>validate_date()</i> attempts to
+            parse the user input. If the format is incorrect, it raises a
+            <i>ValueError</i>, and the user is informed to use the correct
+            format.
+          </p>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>6. Comparing and Sorting Dates</h1>
+      <article>
+        <h2>6.1 Date Comparison Operations</h2>
+        <div class="content-article">
+          <p>
+            In Python, you can compare <i>datetime</i> objects directly using
+            comparison operators like `<`, `<=`, `>`, `>=`, `==`, and `!=`.
             These operations are straightforward, as Python handles
             <i>datetime</i> comparisons chronologically based on the date and
             time values.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Comparing Dates</b></span>
-            <img src="images/code23.png" alt="code snippet 23" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/ouput23.png" alt="code ouput 23" />
-          </div>
-        </div>
-        <p>
-          In this example, we compare two <i>datetime</i> objects to check
-          which one is earlier or later, or if they are equal.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>6.2 Example: Sorting Events by Date</h2>
-      <div class="content-article">
-        <p>
-          When dealing with lists of events or appointments, it is often
-          necessary to sort them by date. Python’s built-in sorting methods
-          can be used in conjunction with <i>datetime</i> objects to achieve
-          this.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Sorting a List of Events</b></span>
-            <img src="images/code24.png" alt="code snippet 24" />
-          </div>
-          <div class="output">
-            <span><b>Ouput</b> :</span>
-            <img src="images/ouput24.png" alt="code ouput 24" />
-          </div>
-        </div>
-        <p>
-          In this example, we have a list of events, each represented as a
-          dictionary containing the event name and its corresponding date. We
-          use the <i>sorted()</i> function, along with a lambda function that
-          specifies the sorting key as the date of each event. The events are
-          then printed in chronological order.
-        </p>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>7. Date Arithmetic and Time Intervals</h1>
-    <article>
-      <h2>7.1 Using <i>timedelta</i> for Date Arithmetic</h2>
-      <div class="content-article">
-        <p>
-          The <i>timedelta</i> class in the <i>datetime</i> module represents
-          a duration or difference between two dates or times. It allows for
-          easy manipulation of dates by adding or subtracting time intervals.
-          The <i>timedelta</i> object can represent days, seconds,
-          microseconds, milliseconds, minutes, hours, and weeks.
-        </p>
-        <p>Here’s how you can work with <i>timedelta</i>:</p>
-        <div class="subpoints">
-          <p>
-            - <b>Creating a <i>timedelta</i> Object</b> : You can create a
-            <i>timedelta</i> object by specifying the duration you want to
-            represent.
-          </p>
-          <p>
-            - <b>Adding/Subtracting Time</b> : You can add or subtract a
-            itimedelta from a <i>datetime</i> object to obtain a new date or
-            time.
-          </p>
-        </div>
-        <div class="code-snippet">
-          <div class="code">
-            <span><b>Example: Basic Operations with <i>timedelta</i></b></span>
-            <img src="images/code25.png" alt="code snippet 25" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output25.png" alt="code output 25" />
-          </div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <h2>7.2 Example: Countdown to a Future Event</h2>
-      <div class="content-article">
-        <p>
-          Let’s say you want to calculate how many days are left until an
-          upcoming event, like a birthday or an important meeting. Here’s how
-          you can use <i>timedelta</i> to do that.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code26.png" alt="code snippet 26" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output26.png" alt="code output 26" />
-          </div>
-        </div>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>8. Measuring Program Execution Time</h1>
-    <p>
-      Measuring the execution time of your code is crucial for performance
-      optimization. Python provides several tools, such as the <i>time</i> and
-      <i>datetime</i> modules, to help measure how long code takes to run.
-      Below, we explore these methods in detail.
-    </p>
-    <article>
-      <h2>8.1 Performance Testing with `time` and `datetime`</h2>
-      <div class="content-article">
-        <p>
-          <b>1. Using the <i>time</i> Module</b>
-        </p>
-        <div class="subpoints">
-          <p>
-            The <i>time</i> module provides functions to measure time
-            intervals. The most common way to use it is by recording the start
-            time and end time of a code block to calculate the duration.
           </p>
           <div class="code-snippet">
             <div class="code">
-              <img src="images/code27.png" alt="code snippet 27" />
+              <span><b>Example: Comparing Dates</b></span>
+              <img src="images/code23.png" alt="code snippet 23" />
             </div>
             <div class="output">
               <span><b>Output</b> :</span>
-              <img src="images/output27.png" alt="code output 27" />
+              <img src="images/output23.png" alt="code ouput 23" />
             </div>
           </div>
-          <span><b>Explanation:</b></span>
-          <div class="subpoints">
-            <p>
-              - The <i>time.time()</i> function returns the current time in
-              seconds since the epoch (January 1, 1970). By capturing the time
-              before and after the code execution, we can calculate the total
-              time taken for that code block.
-            </p>
-          </div>
-        </div>
-        <p>
-          <b>2. Using the <i>datetime</i> Module</b>
-        </p>
-        <div class="subpoints">
           <p>
-            The <i>datetime</i> module can also be used for measuring
-            execution time. This approach is slightly less common but still
-            valid.
+            In this example, we compare two <i>datetime</i> objects to check
+            which one is earlier or later, or if they are equal.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>6.2 Example: Sorting Events by Date</h2>
+        <div class="content-article">
+          <p>
+            When dealing with lists of events or appointments, it is often
+            necessary to sort them by date. Python’s built-in sorting methods
+            can be used in conjunction with <i>datetime</i> objects to achieve
+            this.
           </p>
           <div class="code-snippet">
             <div class="code">
-              <img src="images/code28.png" alt="code snippet 28" />
+              <span><b>Example: Sorting a List of Events</b></span>
+              <img src="images/code24.png" alt="code snippet 24" />
+            </div>
+            <div class="output">
+              <span><b>Ouput</b> :</span>
+              <img src="images/output24.png" alt="code ouput 24" />
+            </div>
+          </div>
+          <p>
+            In this example, we have a list of events, each represented as a
+            dictionary containing the event name and its corresponding date. We
+            use the <i>sorted()</i> function, along with a lambda function that
+            specifies the sorting key as the date of each event. The events are
+            then printed in chronological order.
+          </p>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>7. Date Arithmetic and Time Intervals</h1>
+      <article>
+        <h2>7.1 Using <i>timedelta</i> for Date Arithmetic</h2>
+        <div class="content-article">
+          <p>
+            The <i>timedelta</i> class in the <i>datetime</i> module represents
+            a duration or difference between two dates or times. It allows for
+            easy manipulation of dates by adding or subtracting time intervals.
+            The <i>timedelta</i> object can represent days, seconds,
+            microseconds, milliseconds, minutes, hours, and weeks.
+          </p>
+          <p>Here’s how you can work with <i>timedelta</i>:</p>
+          <div class="subpoints">
+            <p>
+              - <b>Creating a <i>timedelta</i> Object</b> : You can create a
+              <i>timedelta</i> object by specifying the duration you want to
+              represent.
+            </p>
+            <p>
+              - <b>Adding/Subtracting Time</b> : You can add or subtract a
+              itimedelta from a <i>datetime</i> object to obtain a new date or
+              time.
+            </p>
+          </div>
+          <div class="code-snippet">
+            <div class="code">
+              <span
+                ><b>Example: Basic Operations with <i>timedelta</i></b></span
+              >
+              <img src="images/code25.png" alt="code snippet 25" />
             </div>
             <div class="output">
               <span><b>Output</b> :</span>
-              <img src="images/output28.png" alt="code output 28" />
-            </div>
-          </div>
-          <span><b>Explanation:</b></span>
-          <div class="subpoints">
-            <p>
-              - Here, <i>datetime.now()</i> gives the current date and time.
-              By subtracting the start time from the end time, we obtain a
-              <i>timedelta</i> object, which can be converted to total seconds
-              using the <i>total_seconds()</i> method.
-            </p>
-          </div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <h2>8.2 Example: Benchmarking Code Blocks</h2>
-      <div class="content-article">
-        <p>
-          Benchmarking is an essential practice when evaluating different
-          implementations of a particular algorithm or function. The
-          <i>timeit</i> module is specifically designed for this purpose,
-          allowing for accurate measurements of execution time.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code29.png" alt="code snippet 29" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output29.png" alt="code output 29" />
-          </div>
-        </div>
-        <span><b>Explanation:</b></span>
-        <div class="subpoints">
-          <p>
-            - In this example, two different methods for generating a list of
-            squares are tested: using list comprehension and using a for loop.
-          </p>
-          <p>
-            - The <i>timeit.timeit()</i> function is used to execute each code
-            block a specified number of times (10,000 in this case), providing
-            an accurate measure of the time taken for each method.
-          </p>
-          <p>
-            - The results show which method is more efficient, helping
-            developers make informed decisions when optimizing their code.
-          </p>
-        </div>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>9. The <i>calendar</i> Module</h1>
-    <p>
-      The <i>calendar</i> module in Python provides various functions to work
-      with calendars, allowing users to create and manipulate calendar data
-      effectively. It offers functionality to generate calendars for specific
-      months or years, check leap years, and much more.
-    </p>
-    <article>
-      <h2>9.1 Introduction to Calendar Functions</h2>
-      <div class="content-article">
-        <p>
-          The <i>calendar</i> module includes various functions and constants
-          that help in working with dates, weekdays, and months. You can
-          generate textual calendars, check for leap years, and even find the
-          first weekday of a month.
-        </p>
-        <p>To use the <i>calendar</i> module, you first need to import it:</p>
-        <div class="subpoints">
-          <div class="code-snippet">
-            <div class="code">
-              <img src="images/importCal.png" alt="import calendar code snippet" />
+              <img src="images/output25.png" alt="code output 25" />
             </div>
           </div>
         </div>
-      </div>
-    </article>
-    <article>
-      <h2>9.2 Generating Month and Year Calendars</h2>
-      <div class="content-article">
-        <p><b>1. Generating a Textual Month Calendar</b></p>
-        <div class="subpoints">
+      </article>
+      <article>
+        <h2>7.2 Example: Countdown to a Future Event</h2>
+        <div class="content-article">
           <p>
-            You can create a textual representation of a specific month using
-            the <i>month()</i> function:
+            Let’s say you want to calculate how many days are left until an
+            upcoming event, like a birthday or an important meeting. Here’s how
+            you can use <i>timedelta</i> to do that.
           </p>
           <div class="code-snippet">
             <div class="code">
-              <img src="images/code30.png" alt="code snippet 30" />
+              <img src="images/code26.png" alt="code snippet 26" />
             </div>
             <div class="output">
               <span><b>Output</b> :</span>
-              <img src="images/output30.png" alt="code output 30" />
-            </div>
-          </div>
-          <span><b>Explanation:</b></span>
-          <div class="subpoints">
-            <p>
-              - The <i>calendar.month(year, month)</i> function generates a
-              string representing the month of June 2024. The output is
-              formatted in a way that shows the days of the week and their
-              corresponding dates.
-            </p>
-          </div>
-        </div>
-        <p><b>2. Generating a Textual Year Calendar</b></p>
-        <div class="subpoints">
-          <p>
-            To create a calendar for an entire year, you can use the
-            <i>calendar()</i> function:
-          </p>
-          <div class="code-snippet">
-            <div class="code">
-              <img src="images/code31.png" alt="code snippet 31" />
-            </div>
-            <div class="output">
-              <span><b>Output</b> :</span>
-              <img src="images/output31.png" alt="code output 31" />
-            </div>
-          </div>
-          <span><b>Explanation:</b></span>
-          <div class="subpoints">
-            <p>
-              - The <i>calendar.calendar(year)</i> function outputs the entire
-              year in a well-formatted string, displaying each month in a
-              grid.
-            </p>
-          </div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <h2>9.3 Checking Leap Year</h2>
-      <div class="content-article">
-        <p>
-          To check if a year is a leap year, you can use the
-          <i>isleap()</i> function. A leap year occurs every 4 years, but not
-          every 100 years unless it’s divisible by 400.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code32.png" alt="code snippet 32" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output32.png" alt="code output 32" />
-          </div>
-        </div>
-        <span><b>Explanation:</b></span>
-        <div class="subpoints">
-          <p>
-            - The <i>calendar.isleap(year)</i> function returns <i>True</i> if
-            the specified year is a leap year; otherwise, it returns
-            <i>False</i>.
-          </p>
-        </div>
-      </div>
-    </article>
-    <article>
-      <h2>9.4 Weekday and Month Constants</h2>
-      <div class="content-article">
-        <p>
-          The <i>calendar</i> module also provides constants for the days of
-          the week and the number of days in each month.
-        </p>
-        <p><b>1. Weekday Constants</b>:</p>
-        <div class="subpoints">
-          <p>
-            - <i>calendar.SUNDAY</i>, <i>calendar.MONDAY</i>, etc., are
-            constants that represent the corresponding day of the week.
-          </p>
-        </div>
-        <p><b>2. Month Constants</b>:</p>
-        <div class="subpoints">
-          <p>
-            - The number of days in a month can be accessed via
-            <i>calendar.monthrange(year, month)</i>, which returns a tuple
-            containing the weekday of the first day of the month and the
-            number of days in that month.
-          </p>
-        </div>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code33.png" alt="code snippet 33" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="images/output 33.png" alt="code output 33" />
-          </div>
-        </div>
-        <span><b>Explanation:</b></span>
-        <div class="subpoints">
-          <p>
-            - Here, <i>monthrange()</i> returns the first weekday of February
-            2024 (which is a Friday, represented by 3) and confirms that there
-            are 29 days in the month due to it being a leap year.
-          </p>
-        </div>
-      </div>
-    </article>
-    <article>
-      <h2>9.5 Example: Scheduling Events on Weekdays</h2>
-      <div class="content-article">
-        <p>
-          Using the <i>calendar</i> module, you can schedule events based on
-          weekdays. This example shows how to find all Mondays in a given
-          month:
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code34.png" alt="code snippet 34" />
-          </div>
-          <div class="output">
-            <span><b>Output</b> :</span>
-            <img src="image/output34.png" alt="code output 34" />
-          </div>
-        </div>
-        <span><b>Explanation:</b></span>
-        <div class="subpoints">
-          <p>
-            The <i>find_weekdays()</i> function iterates over the weeks of the
-            specified month and checks for the given weekday. If a week
-            contains that weekday, it adds it to the list. The final output
-            lists all Mondays in June 2024.
-          </p>
-        </div>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>10. Error Handling in Date/Time Operations</h1>
-    <p>
-      Error handling in date and time operations is crucial to ensure that
-      your applications run smoothly and can handle unexpected input
-      gracefully. This section covers how to validate user inputs and manage
-      common parsing errors when working with dates and times in Python.
-    </p>
-    <article>
-      <h2>10.1 Validating User Inputs and Parsing Errors</h2>
-      <div class="content-article">
-        <p>
-          When dealing with user inputs, especially date and time data, it's
-          essential to validate that the data provided is correct and can be
-          parsed without errors. The most common errors encountered during
-          date/time operations include:
-        </p>
-        <div class="subpoints">
-          <p>- Invalid date formats</p>
-          <p>- Non-existent dates (e.g., February 30)</p>
-          <p>
-            - Wrong data types (e.g., passing strings instead of date objects)
-          </p>
-        </div>
-        <p>
-          To address these issues, Python provides exception handling using
-          <i>try</i>, <i>except</i>, and <i>finally</i> blocks. This allows
-          you to catch errors and handle them appropriately.
-        </p>
-      </div>
-    </article>
-    <article>
-      <h2>10.2 Example: Correctly Handling Invalid Dates</h2>
-      <div class="content-article">
-        <p>
-          Let's create a function that takes user input for a date, validates
-          it, and handles any parsing errors that arise.
-        </p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code35.png" alt="code snippet 35" />
-          </div>
-          <div class="output page-break">
-            <span><b>Output Examples</b> :</span>
-            <div class="subpoints">
-              <span><b>1. Valid Input</b> :</span>
-              <img src="images/output35.1.png" alt="code output 35.1" />
-              <span><b>2. Invalid Input (Non-existent Date):</b></span>
-              <img src="images/output35.2.png" alt="code output 35.2" />
-              <span><b>3. Invalid Input (Wrong Format):</b></span>
-              <img src="images/output35.3.png" alt="code output 35.3" />
+              <img src="images/output26.png" alt="code output 26" />
             </div>
           </div>
         </div>
-        <span><b>Explanation:</b></span>
-        <div class="subpoints">
-          <p>- In the <i>get_date_from_user()</i> function, we prompt the user to enter a date in the specified format (<i>YYYY-MM-DD</i>).</p>
-          <p>- The <i>datetime.strptime()</i> method attempts to parse the input string. If the input is valid, it converts it to a <i>datetime</i> object and prints it.</p>
-          <p>- If the input is invalid, a <i>ValueError</i> is raised, which we catch to inform the user about the specific error. This helps users understand what went wrong and how to correct it.</p>
-          <p>- We also include a general exception handler to catch any unexpected errors that might occur.</p>
-        </div>
-        <p>By implementing error handling, we can ensure that our program behaves predictably, even in the face of invalid user input, making it user-friendly and robust.</p>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>11. Practical Applications</h1>
-    <p>The manipulation of date and time in Python has numerous practical applications in software development. Understanding how to work with dates and times allows developers to build effective solutions for various real-world problems. This section will explore common applications, including scheduling, logging, and event management, followed by a practical example of automating task scheduling.</p>
-    <article>
-      <h2>11.1 Scheduling, Logging, and Event Management</h2>
-      <div class="content-article">
-        <p>1. <b>Scheduling</b> : Scheduling refers to the process of planning tasks to run at specific times. This is particularly useful in automation, such as sending reminders, executing batch jobs, or performing maintenance tasks at predefined intervals.</p>
-        <p>2. <b>Logging</b> : Logging is essential for monitoring applications. By including timestamps in log entries, developers can trace events and errors in the order they occurred, making it easier to diagnose issues.</p>
-        <p>3. <b>Event Management</b> : Event management systems rely heavily on date and time to track events, deadlines, and schedules. These systems often involve creating, updating, and deleting events based on user interactions.</p>
-      </div>
-    </article>
-    <article>
-      <h2>11.2 Example: Automating Task Scheduling</h2>
-      <div class="content-atricle">
-        <p>Let’s create a practical example that demonstrates how to automate a simple task scheduling system using Python. We’ll use the <i>schedule</i> library, which allows you to run Python functions at specific intervals.</p>
-        <p>First, make sure to install the <i>schedule</i> library using pip if you haven't already:</p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/importSchedule.png" alt="import schedule code snippet">
-          </div>
-        </div>
-        <p>Now, let's implement a task scheduler that runs a specific function every minute.</p>
-        <div class="code-snippet">
-          <div class="code">
-            <img src="images/code36.png" alt="code snippet 36">
-          </div>
-          <span><b>How This Works:</b></span>
-          <div class="subpoints">
-            <p>- The <i>job()</i> function prints the current date and time when executed. This is where you would put the code for the task you want to automate.</p>
-            <p>- We schedule the <i>job()</i> function to run every minute using <i>schedule.every(1).minutes.do(job)</i>.</p>
-            <p>- The <i>while True</i> loop continuously checks for pending scheduled tasks and executes them as needed. The <i>time.sleep(1)</i> prevents the loop from consuming too much CPU.</p>
-          </div>
-          <div class="output">
-            <span><b>Output Example:</b></span>
-            <p>When you run this script, the output will look something like this every minute:</p>
-            <img src="images/output36.png" alt="code output 36">
-          </div>
-        </div>
-        <span><b>Explanation:</b></span>
-        <div class="subpoints">
-          <p>- The script starts a scheduler that runs in an infinite loop, executing the scheduled tasks. You can replace the content of the `job()` function with any task you need to perform automatically.</p>
-          <p>- Pressing `Ctrl+C` stops the scheduler gracefully, demonstrating good user experience and control over the running program.</p>
-        </div>
-        <p>This example illustrates how to automate tasks based on a schedule, highlighting the importance of date and time manipulation in real-world applications.</p>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>12. Conclusion</h1>
-    <p>
-      Handling dates and times effectively is crucial for any programming project involving scheduling, logging, or time-based calculations. In Python, the <i>datetime</i>, <i>time</i>, and <i>calendar</i> modules provide robust tools for manipulating and formatting date and time data. Proper management of date and time is essential for ensuring accuracy and reliability in applications.
-    </p>
-    <article>
-      <h2>12.1 Best Practices for Date and Time Handling in Python</h2>
-      <div class="content-article">
-        <p>
-          1. <b>Use <i>datetime</i> over <i>time</i> for Date and Time Manipulation:</b> Always prefer the <i>datetime</i> module over manual string manipulations or simpler data types when dealing with dates and times. It provides a comprehensive and flexible set of tools for handling these data types compared to the <i>time</i> module.
-        </p>
-        <p>
-          2. <b>Use ISO 8601 Format:</b> When storing or transmitting date and time information, prefer the ISO 8601 format (<i>YYYY-MM-DDTHH:MM:SS</i>). This format is standardized, human-readable, and less prone to errors compared to formats that vary by locale.
-        </p>
-        <p>
-          3. <b>Utilize <i>timedelta</i> for Date Arithmetic:</b> When performing calculations with dates, such as adding or subtracting days, use <i>timedelta</i> to avoid errors and ensure that date arithmetic is accurate.
-        </p>
-        <p>
-          4. <b>Always Handle Time Zones:</b> Use libraries like `pytz` to handle time zones effectively, especially when dealing with international applications.
-        </p>
-        <p>
-          5. <b>Validate User Inputs:</b> Always validate date and time inputs rigorously. Use <i>strptime()</i> for parsing user input and implement error handling to manage incorrect formats or invalid dates.
-        </p>
-        <p>
-          6. <b>Leverage <i>strftime</i> and <i>strptime</i>:</b> For formatting dates for display or parsing user input, utilize <i>strftime()</i> and <i>strptime()</i> for flexibility and clarity.
-        </p>
-        <p>
-          7. <b>Document Time-Related Logic:</b> When your code involves time-related logic such as scheduling or deadlines, clearly document the reasoning behind your calculations. This improves code maintainability and helps other developers understand your logic.
-        </p>
-        <p>
-          8. <b>Optimize Performance:</b> In performance-critical applications, avoid unnecessary date/time calculations within tight loops. Cache results or minimize the frequency of calls to time functions when possible.
-        </p>
-      </div>
-    </article>
-    <article class="page-break">
-      <h2>12.2 Summary of Important Functions and Classes</h2>
-      <div class="content-article">
-        <p>
-          <b>1. <i>datetime</i> Class:</b>
-        </p>
-        <div class="subpoints">
-          <p>- <i>now()</i>: Returns the current local date and time.</p>
-          <p>- <i>today()</i>: Returns the current local date.</p>
-          <p>- <i>combine(date, time)</i>: Combines a <i>date</i> object with a <i>time</i> object to create a <i>datetime</i> object.</p>
-        </div>
-        <p>
-          <b>2. <i>timedelta</i> Class:</b>
-        </p>
-        <div class="subpoints">
-          <p>- Represents the difference between two dates or times. Key methods include creating objects like <i>timedelta(days=1)</i> or <i>timedelta(hours=1, minutes=30)</i>.</p>
-        </div>
-        <p><b>3. <i>strftime(format)</i>:</b></p>
-        <div class="subpoints">
-          <p>- Formats a <i>datetime</i> object into a string based on the specified format.</p>
-        </div>
-        <p>
-          <b>4. <i>strptime(date_string, format)</i>:</b>
-        </p>
-        <div class="subpoints">
-          <p>- Parses a string into a <i>datetime</i> object based on the specified format.</p>
-        </div>
-        <p>
-          <b>5. <i>calendar</i> Module:</b>
-        </p>
-        <div class="subpoints">
-          <p>
-            - <i>monthcalendar(year, month)</i>: Returns a matrix representing the month's calendar.
-          </p>
-          <p>
-            - <i>isleap(year)</i>: Checks if the specified year is a leap year.
-          </p>
-        </div>
-        <p>By adhering to these best practices and utilizing the summarized functions, developers can manage dates and times effectively in their Python applications, ensuring both accuracy and reliability.</p>
-      </div>
-    </article>
-  </div>
-  <div class="block page-break">
-    <h1>13. References and Further Reading</h1>
-    <article>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>8. Measuring Program Execution Time</h1>
       <p>
-        <b>1. Official Python Documentation:</b>
+        Measuring the execution time of your code is crucial for performance
+        optimization. Python provides several tools, such as the <i>time</i> and
+        <i>datetime</i> modules, to help measure how long code takes to run.
+        Below, we explore these methods in detail.
       </p>
-      <div class="subpoints">
-        <p><b>datetime - Basic date and time types</b>: <a href="https://docs.python.org/3/library/datetime.html"><i>https://docs.python.org/3/library/datetime.html</i></a>
-        <span>(<i>The official documentation for the `datetime` module provides detailed explanations of all classes and methods available.</i>)</span>
-        </p>
+      <article>
+        <h2>8.1 Performance Testing with `time` and `datetime`</h2>
+        <div class="content-article">
+          <p>
+            <b>1. Using the <i>time</i> Module</b>
+          </p>
+          <div class="subpoints">
+            <p>
+              The <i>time</i> module provides functions to measure time
+              intervals. The most common way to use it is by recording the start
+              time and end time of a code block to calculate the duration.
+            </p>
+            <div class="code-snippet">
+              <div class="code">
+                <img src="images/code27.png" alt="code snippet 27" />
+              </div>
+              <div class="output">
+                <span><b>Output</b> :</span>
+                <img src="images/output27.png" alt="code output 27" />
+              </div>
+            </div>
+            <span><b>Explanation:</b></span>
+            <div class="subpoints">
+              <p>
+                - The <i>time.time()</i> function returns the current time in
+                seconds since the epoch (January 1, 1970). By capturing the time
+                before and after the code execution, we can calculate the total
+                time taken for that code block.
+              </p>
+            </div>
+          </div>
+          <p>
+            <b>2. Using the <i>datetime</i> Module</b>
+          </p>
+          <div class="subpoints">
+            <p>
+              The <i>datetime</i> module can also be used for measuring
+              execution time. This approach is slightly less common but still
+              valid.
+            </p>
+            <div class="code-snippet">
+              <div class="code">
+                <img src="images/code28.png" alt="code snippet 28" />
+              </div>
+              <div class="output">
+                <span><b>Output</b> :</span>
+                <img src="images/output28.png" alt="code output 28" />
+              </div>
+            </div>
+            <span><b>Explanation:</b></span>
+            <div class="subpoints">
+              <p>
+                - Here, <i>datetime.now()</i> gives the current date and time.
+                By subtracting the start time from the end time, we obtain a
+                <i>timedelta</i> object, which can be converted to total seconds
+                using the <i>total_seconds()</i> method.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>8.2 Example: Benchmarking Code Blocks</h2>
+        <div class="content-article">
+          <p>
+            Benchmarking is an essential practice when evaluating different
+            implementations of a particular algorithm or function. The
+            <i>timeit</i> module is specifically designed for this purpose,
+            allowing for accurate measurements of execution time.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code29.png" alt="code snippet 29" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output29.png" alt="code output 29" />
+            </div>
+          </div>
+          <span><b>Explanation:</b></span>
+          <div class="subpoints">
+            <p>
+              - In this example, two different methods for generating a list of
+              squares are tested: using list comprehension and using a for loop.
+            </p>
+            <p>
+              - The <i>timeit.timeit()</i> function is used to execute each code
+              block a specified number of times (10,000 in this case), providing
+              an accurate measure of the time taken for each method.
+            </p>
+            <p>
+              - The results show which method is more efficient, helping
+              developers make informed decisions when optimizing their code.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>9. The <i>calendar</i> Module</h1>
+      <p>
+        The <i>calendar</i> module in Python provides various functions to work
+        with calendars, allowing users to create and manipulate calendar data
+        effectively. It offers functionality to generate calendars for specific
+        months or years, check leap years, and much more.
+      </p>
+      <article>
+        <h2>9.1 Introduction to Calendar Functions</h2>
+        <div class="content-article">
+          <p>
+            The <i>calendar</i> module includes various functions and constants
+            that help in working with dates, weekdays, and months. You can
+            generate textual calendars, check for leap years, and even find the
+            first weekday of a month.
+          </p>
+          <p>To use the <i>calendar</i> module, you first need to import it:</p>
+          <div class="subpoints">
+            <div class="code-snippet">
+              <div class="code">
+                <img
+                  src="images/importCal.png"
+                  alt="import calendar code snippet"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>9.2 Generating Month and Year Calendars</h2>
+        <div class="content-article">
+          <p><b>1. Generating a Textual Month Calendar</b></p>
+          <div class="subpoints">
+            <p>
+              You can create a textual representation of a specific month using
+              the <i>month()</i> function:
+            </p>
+            <div class="code-snippet">
+              <div class="code">
+                <img src="images/code30.png" alt="code snippet 30" />
+              </div>
+              <div class="output">
+                <span><b>Output</b> :</span>
+                <img src="images/output30.png" alt="code output 30" />
+              </div>
+            </div>
+            <span><b>Explanation:</b></span>
+            <div class="subpoints">
+              <p>
+                - The <i>calendar.month(year, month)</i> function generates a
+                string representing the month of June 2024. The output is
+                formatted in a way that shows the days of the week and their
+                corresponding dates.
+              </p>
+            </div>
+          </div>
+          <p><b>2. Generating a Textual Year Calendar</b></p>
+          <div class="subpoints">
+            <p>
+              To create a calendar for an entire year, you can use the
+              <i>calendar()</i> function:
+            </p>
+            <div class="code-snippet">
+              <div class="code">
+                <img src="images/code31.png" alt="code snippet 31" />
+              </div>
+              <div class="output">
+                <span><b>Output</b> :</span>
+                <img src="images/output31.png" alt="code output 31" />
+              </div>
+            </div>
+            <span><b>Explanation:</b></span>
+            <div class="subpoints">
+              <p>
+                - The <i>calendar.calendar(year)</i> function outputs the entire
+                year in a well-formatted string, displaying each month in a
+                grid.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>9.3 Checking Leap Year</h2>
+        <div class="content-article">
+          <p>
+            To check if a year is a leap year, you can use the
+            <i>isleap()</i> function. A leap year occurs every 4 years, but not
+            every 100 years unless it’s divisible by 400.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code32.png" alt="code snippet 32" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output32.png" alt="code output 32" />
+            </div>
+          </div>
+          <span><b>Explanation:</b></span>
+          <div class="subpoints">
+            <p>
+              - The <i>calendar.isleap(year)</i> function returns <i>True</i> if
+              the specified year is a leap year; otherwise, it returns
+              <i>False</i>.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>9.4 Weekday and Month Constants</h2>
+        <div class="content-article">
+          <p>
+            The <i>calendar</i> module also provides constants for the days of
+            the week and the number of days in each month.
+          </p>
+          <p><b>1. Weekday Constants</b>:</p>
+          <div class="subpoints">
+            <p>
+              - <i>calendar.SUNDAY</i>, <i>calendar.MONDAY</i>, etc., are
+              constants that represent the corresponding day of the week.
+            </p>
+          </div>
+          <p><b>2. Month Constants</b>:</p>
+          <div class="subpoints">
+            <p>
+              - The number of days in a month can be accessed via
+              <i>calendar.monthrange(year, month)</i>, which returns a tuple
+              containing the weekday of the first day of the month and the
+              number of days in that month.
+            </p>
+          </div>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code33.png" alt="code snippet 33" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output33.png" alt="code output 33" />
+            </div>
+          </div>
+          <span><b>Explanation:</b></span>
+          <div class="subpoints">
+            <p>
+              - Here, <i>monthrange()</i> returns the first weekday of February
+              2024 (which is a Friday, represented by 3) and confirms that there
+              are 29 days in the month due to it being a leap year.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h2>9.5 Example: Scheduling Events on Weekdays</h2>
+        <div class="content-article">
+          <p>
+            Using the <i>calendar</i> module, you can schedule events based on
+            weekdays. This example shows how to find all Mondays in a given
+            month:
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code34.png" alt="code snippet 34" />
+            </div>
+            <div class="output">
+              <span><b>Output</b> :</span>
+              <img src="images/output34.png" alt="code output 34" />
+            </div>
+          </div>
+          <span><b>Explanation:</b></span>
+          <div class="subpoints">
+            <p>
+              The <i>find_weekdays()</i> function iterates over the weeks of the
+              specified month and checks for the given weekday. If a week
+              contains that weekday, it adds it to the list. The final output
+              lists all Mondays in June 2024.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>10. Error Handling in Date/Time Operations</h1>
+      <p>
+        Error handling in date and time operations is crucial to ensure that
+        your applications run smoothly and can handle unexpected input
+        gracefully. This section covers how to validate user inputs and manage
+        common parsing errors when working with dates and times in Python.
+      </p>
+      <article>
+        <h2>10.1 Validating User Inputs and Parsing Errors</h2>
+        <div class="content-article">
+          <p>
+            When dealing with user inputs, especially date and time data, it's
+            essential to validate that the data provided is correct and can be
+            parsed without errors. The most common errors encountered during
+            date/time operations include:
+          </p>
+          <div class="subpoints">
+            <p>- Invalid date formats</p>
+            <p>- Non-existent dates (e.g., February 30)</p>
+            <p>
+              - Wrong data types (e.g., passing strings instead of date objects)
+            </p>
+          </div>
+          <p>
+            To address these issues, Python provides exception handling using
+            <i>try</i>, <i>except</i>, and <i>finally</i> blocks. This allows
+            you to catch errors and handle them appropriately.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>10.2 Example: Correctly Handling Invalid Dates</h2>
+        <div class="content-article">
+          <p>
+            Let's create a function that takes user input for a date, validates
+            it, and handles any parsing errors that arise.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code35.png" alt="code snippet 35" />
+            </div>
+            <div class="output page-break">
+              <span><b>Output Examples</b> :</span>
+              <div class="subpoints">
+                <span><b>1. Valid Input</b> :</span>
+                <img src="images/output35.1.png" alt="code output 35.1" />
+                <span><b>2. Invalid Input (Non-existent Date):</b></span>
+                <img src="images/output35.2.png" alt="code output 35.2" />
+                <span><b>3. Invalid Input (Wrong Format):</b></span>
+                <img src="images/output35.3.png" alt="code output 35.3" />
+              </div>
+            </div>
+          </div>
+          <span><b>Explanation:</b></span>
+          <div class="subpoints">
+            <p>
+              - In the <i>get_date_from_user()</i> function, we prompt the user
+              to enter a date in the specified format (<i>YYYY-MM-DD</i>).
+            </p>
+            <p>
+              - The <i>datetime.strptime()</i> method attempts to parse the
+              input string. If the input is valid, it converts it to a
+              <i>datetime</i> object and prints it.
+            </p>
+            <p>
+              - If the input is invalid, a <i>ValueError</i> is raised, which we
+              catch to inform the user about the specific error. This helps
+              users understand what went wrong and how to correct it.
+            </p>
+            <p>
+              - We also include a general exception handler to catch any
+              unexpected errors that might occur.
+            </p>
+          </div>
+          <p>
+            By implementing error handling, we can ensure that our program
+            behaves predictably, even in the face of invalid user input, making
+            it user-friendly and robust.
+          </p>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>11. Practical Applications</h1>
+      <p>
+        The manipulation of date and time in Python has numerous practical
+        applications in software development. Understanding how to work with
+        dates and times allows developers to build effective solutions for
+        various real-world problems. This section will explore common
+        applications, including scheduling, logging, and event management,
+        followed by a practical example of automating task scheduling.
+      </p>
+      <article>
+        <h2>11.1 Scheduling, Logging, and Event Management</h2>
+        <div class="content-article">
+          <p>
+            1. <b>Scheduling</b> : Scheduling refers to the process of planning
+            tasks to run at specific times. This is particularly useful in
+            automation, such as sending reminders, executing batch jobs, or
+            performing maintenance tasks at predefined intervals.
+          </p>
+          <p>
+            2. <b>Logging</b> : Logging is essential for monitoring
+            applications. By including timestamps in log entries, developers can
+            trace events and errors in the order they occurred, making it easier
+            to diagnose issues.
+          </p>
+          <p>
+            3. <b>Event Management</b> : Event management systems rely heavily
+            on date and time to track events, deadlines, and schedules. These
+            systems often involve creating, updating, and deleting events based
+            on user interactions.
+          </p>
+        </div>
+      </article>
+      <article>
+        <h2>11.2 Example: Automating Task Scheduling</h2>
+        <div class="content-atricle">
+          <p>
+            Let’s create a practical example that demonstrates how to automate a
+            simple task scheduling system using Python. We’ll use the
+            <i>schedule</i> library, which allows you to run Python functions at
+            specific intervals.
+          </p>
+          <p>
+            First, make sure to install the <i>schedule</i> library using pip if
+            you haven't already:
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img
+                src="images/importschedule.png"
+                alt="import schedule code snippet"
+              />
+            </div>
+          </div>
+          <p>
+            Now, let's implement a task scheduler that runs a specific function
+            every minute.
+          </p>
+          <div class="code-snippet">
+            <div class="code">
+              <img src="images/code36.png" alt="code snippet 36" />
+            </div>
+            <span><b>How This Works:</b></span>
+            <div class="subpoints">
+              <p>
+                - The <i>job()</i> function prints the current date and time
+                when executed. This is where you would put the code for the task
+                you want to automate.
+              </p>
+              <p>
+                - We schedule the <i>job()</i> function to run every minute
+                using <i>schedule.every(1).minutes.do(job)</i>.
+              </p>
+              <p>
+                - The <i>while True</i> loop continuously checks for pending
+                scheduled tasks and executes them as needed. The
+                <i>time.sleep(1)</i> prevents the loop from consuming too much
+                CPU.
+              </p>
+            </div>
+            <div class="output">
+              <span><b>Output Example:</b></span>
+              <p>
+                When you run this script, the output will look something like
+                this every minute:
+              </p>
+              <img src="images/output36.png" alt="code output 36" />
+            </div>
+          </div>
+          <span><b>Explanation:</b></span>
+          <div class="subpoints">
+            <p>
+              - The script starts a scheduler that runs in an infinite loop,
+              executing the scheduled tasks. You can replace the content of the
+              `job()` function with any task you need to perform automatically.
+            </p>
+            <p>
+              - Pressing `Ctrl+C` stops the scheduler gracefully, demonstrating
+              good user experience and control over the running program.
+            </p>
+          </div>
+          <p>
+            This example illustrates how to automate tasks based on a schedule,
+            highlighting the importance of date and time manipulation in
+            real-world applications.
+          </p>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>12. Conclusion</h1>
+      <p>
+        Handling dates and times effectively is crucial for any programming
+        project involving scheduling, logging, or time-based calculations. In
+        Python, the <i>datetime</i>, <i>time</i>, and <i>calendar</i> modules
+        provide robust tools for manipulating and formatting date and time data.
+        Proper management of date and time is essential for ensuring accuracy
+        and reliability in applications.
+      </p>
+      <article>
+        <h2>12.1 Best Practices for Date and Time Handling in Python</h2>
+        <div class="content-article">
+          <p>
+            1.
+            <b
+              >Use <i>datetime</i> over <i>time</i> for Date and Time
+              Manipulation:</b
+            >
+            Always prefer the <i>datetime</i> module over manual string
+            manipulations or simpler data types when dealing with dates and
+            times. It provides a comprehensive and flexible set of tools for
+            handling these data types compared to the <i>time</i> module.
+          </p>
+          <p>
+            2. <b>Use ISO 8601 Format:</b> When storing or transmitting date and
+            time information, prefer the ISO 8601 format
+            (<i>YYYY-MM-DDTHH:MM:SS</i>). This format is standardized,
+            human-readable, and less prone to errors compared to formats that
+            vary by locale.
+          </p>
+          <p>
+            3. <b>Utilize <i>timedelta</i> for Date Arithmetic:</b> When
+            performing calculations with dates, such as adding or subtracting
+            days, use <i>timedelta</i> to avoid errors and ensure that date
+            arithmetic is accurate.
+          </p>
+          <p>
+            4. <b>Always Handle Time Zones:</b> Use libraries like `pytz` to
+            handle time zones effectively, especially when dealing with
+            international applications.
+          </p>
+          <p>
+            5. <b>Validate User Inputs:</b> Always validate date and time inputs
+            rigorously. Use <i>strptime()</i> for parsing user input and
+            implement error handling to manage incorrect formats or invalid
+            dates.
+          </p>
+          <p>
+            6. <b>Leverage <i>strftime</i> and <i>strptime</i>:</b> For
+            formatting dates for display or parsing user input, utilize
+            <i>strftime()</i> and <i>strptime()</i> for flexibility and clarity.
+          </p>
+          <p>
+            7. <b>Document Time-Related Logic:</b> When your code involves
+            time-related logic such as scheduling or deadlines, clearly document
+            the reasoning behind your calculations. This improves code
+            maintainability and helps other developers understand your logic.
+          </p>
+          <p>
+            8. <b>Optimize Performance:</b> In performance-critical
+            applications, avoid unnecessary date/time calculations within tight
+            loops. Cache results or minimize the frequency of calls to time
+            functions when possible.
+          </p>
+        </div>
+      </article>
+      <article class="page-break">
+        <h2>12.2 Summary of Important Functions and Classes</h2>
+        <div class="content-article">
+          <p>
+            <b>1. <i>datetime</i> Class:</b>
+          </p>
+          <div class="subpoints">
+            <p>- <i>now()</i>: Returns the current local date and time.</p>
+            <p>- <i>today()</i>: Returns the current local date.</p>
+            <p>
+              - <i>combine(date, time)</i>: Combines a <i>date</i> object with a
+              <i>time</i> object to create a <i>datetime</i> object.
+            </p>
+          </div>
+          <p>
+            <b>2. <i>timedelta</i> Class:</b>
+          </p>
+          <div class="subpoints">
+            <p>
+              - Represents the difference between two dates or times. Key
+              methods include creating objects like <i>timedelta(days=1)</i> or
+              <i>timedelta(hours=1, minutes=30)</i>.
+            </p>
+          </div>
+          <p>
+            <b>3. <i>strftime(format)</i>:</b>
+          </p>
+          <div class="subpoints">
+            <p>
+              - Formats a <i>datetime</i> object into a string based on the
+              specified format.
+            </p>
+          </div>
+          <p>
+            <b>4. <i>strptime(date_string, format)</i>:</b>
+          </p>
+          <div class="subpoints">
+            <p>
+              - Parses a string into a <i>datetime</i> object based on the
+              specified format.
+            </p>
+          </div>
+          <p>
+            <b>5. <i>calendar</i> Module:</b>
+          </p>
+          <div class="subpoints">
+            <p>
+              - <i>monthcalendar(year, month)</i>: Returns a matrix representing
+              the month's calendar.
+            </p>
+            <p>
+              - <i>isleap(year)</i>: Checks if the specified year is a leap
+              year.
+            </p>
+          </div>
+          <p>
+            By adhering to these best practices and utilizing the summarized
+            functions, developers can manage dates and times effectively in
+            their Python applications, ensuring both accuracy and reliability.
+          </p>
+        </div>
+      </article>
+    </div>
+    <div class="block page-break">
+      <h1>13. References and Further Reading</h1>
+      <article>
         <p>
-          <b>
-            time - Time access and conversions
-          </b>:
-          <a href="https://docs.python.org/3/library/time.html"><i>https://docs.python.org/3/library/time.html</i></a>
-          <span>(<i>This documentation covers the `time` module, including time-related functions.</i>)</span>
+          <b>1. Official Python Documentation:</b>
         </p>
-        <p>
-          <b>Calendar object - methods and properties</b>:
-          <a href="https://docs.python.org/3/library/calendar.html"><i>https://docs.python.org/3/library/calendar.html</i></a>
-          <span>(<i>Explore functions for calendar-related operations in Python.</i>)</span>
-        </p>
-      </div>
-      <p><b>2. Books:</b></p>
-      <div class="subpoints">
-        <p>- <b>"Python Crash Course"</b> by <i>Eric Matthes</i> : This book includes practical examples and projects that cover various Python functionalities, including date and time handling.</p>
-        <p>- <b>"Fluent Python"</b> by <i>Luciano Ramalho</i> : A comprehensive guide that goes in-depth into Python's features, including the `datetime` module.</p>
-      </div>
-      <p><b>3. Online Tutorials and Articles:</b></p>
-      <div class="subpoints">
-        <p>
-          1. <b>Real Python: </b>
-          <a href="https://realpython.com/python-date-time/">https://realpython.com/python-date-time/</a>
-          <span>(<i>A detailed guide on working with dates and times in Python, offering practical examples and best practices.</i>)</span>
-        </p>
-        <p>
-          2. <b>Geeks for Geeks: </b>
-          <a href="https://www.geeksforgeeks.org/python-date-time/">https://www.geeksforgeeks.org/python-date-time/</a>
-          <span>(<i>An informative article with numerous examples and explanations regarding the `datetime` and `calendar` modules.</i>)</span>
-        </p>
-        <p>
-          3. <b>W3Schools: </b>
-          <a href="https://www.w3schools.com/python/python_datetime.asp">https://www.w3schools.com/python/python_datetime.asp</a>
-          <span>(<i>A beginner-friendly tutorial covering the basics of date and time in Python with practical examples.</i>)</span>
-        </p>
-      </div>
-      <p><b>4. Libraries:</b></p>
-      <div class="subpoints">
-        <p>
-          - <i><b>pytz</b></i>: A library that allows accurate and cross-platform timezone calculations. It's essential for projects that require timezone support.
-        </p>
-        <p>
-          - <i><b>dateutil</b></i>: A powerful extension to the standard <i>datetime</i> module, offering additional functionalities like relative dates and more complex parsing.
-        </p>
-      </div>
-    </article>
-  </div>
-  <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
-</body>
-
+        <div class="subpoints">
+          <p>
+            <b>datetime - Basic date and time types</b>:
+            <a href="https://docs.python.org/3/library/datetime.html"
+              ><i>https://docs.python.org/3/library/datetime.html</i></a
+            >
+            <span
+              >(<i
+                >The official documentation for the `datetime` module provides
+                detailed explanations of all classes and methods available.</i
+              >)</span
+            >
+          </p>
+          <p>
+            <b> time - Time access and conversions </b>:
+            <a href="https://docs.python.org/3/library/time.html"
+              ><i>https://docs.python.org/3/library/time.html</i></a
+            >
+            <span
+              >(<i
+                >This documentation covers the `time` module, including
+                time-related functions.</i
+              >)</span
+            >
+          </p>
+          <p>
+            <b>Calendar object - methods and properties</b>:
+            <a href="https://docs.python.org/3/library/calendar.html"
+              ><i>https://docs.python.org/3/library/calendar.html</i></a
+            >
+            <span
+              >(<i
+                >Explore functions for calendar-related operations in Python.</i
+              >)</span
+            >
+          </p>
+        </div>
+        <p><b>2. Books:</b></p>
+        <div class="subpoints">
+          <p>
+            - <b>"Python Crash Course"</b> by <i>Eric Matthes</i> : This book
+            includes practical examples and projects that cover various Python
+            functionalities, including date and time handling.
+          </p>
+          <p>
+            - <b>"Fluent Python"</b> by <i>Luciano Ramalho</i> : A comprehensive
+            guide that goes in-depth into Python's features, including the
+            `datetime` module.
+          </p>
+        </div>
+        <p><b>3. Online Tutorials and Articles:</b></p>
+        <div class="subpoints">
+          <p>
+            1. <b>Real Python: </b>
+            <a href="https://realpython.com/python-date-time/"
+              >https://realpython.com/python-date-time/</a
+            >
+            <span
+              >(<i
+                >A detailed guide on working with dates and times in Python,
+                offering practical examples and best practices.</i
+              >)</span
+            >
+          </p>
+          <p>
+            2. <b>Geeks for Geeks: </b>
+            <a href="https://www.geeksforgeeks.org/python-date-time/"
+              >https://www.geeksforgeeks.org/python-date-time/</a
+            >
+            <span
+              >(<i
+                >An informative article with numerous examples and explanations
+                regarding the `datetime` and `calendar` modules.</i
+              >)</span
+            >
+          </p>
+          <p>
+            3. <b>W3Schools: </b>
+            <a href="https://www.w3schools.com/python/python_datetime.asp"
+              >https://www.w3schools.com/python/python_datetime.asp</a
+            >
+            <span
+              >(<i
+                >A beginner-friendly tutorial covering the basics of date and
+                time in Python with practical examples.</i
+              >)</span
+            >
+          </p>
+        </div>
+        <p><b>4. Libraries:</b></p>
+        <div class="subpoints">
+          <p>
+            - <i><b>pytz</b></i
+            >: A library that allows accurate and cross-platform timezone
+            calculations. It's essential for projects that require timezone
+            support.
+          </p>
+          <p>
+            - <i><b>dateutil</b></i
+            >: A powerful extension to the standard <i>datetime</i> module,
+            offering additional functionalities like relative dates and more
+            complex parsing.
+          </p>
+        </div>
+      </article>
+    </div>
+    <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script>
+  </body>
 </html>

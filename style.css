@@ -117,7 +117,7 @@ img {
   margin-right: 20px;
 }
 
-.toc-c>ol>ol {
+.toc-c > ol > ol {
   margin-left: 20px;
   list-style-type: none;
   /* Remove default numbering for nested lists */
@@ -142,6 +142,7 @@ img {
 
 a {
   text-decoration: none;
+  font-style: italic;
 }
 
 /* ===========================================================
@@ -171,14 +172,14 @@ a {
       /* Make the footer text bold */
     }
   }
-  
+
   @page:first {
     @bottom-left {
       content: none;
     }
   }
-  
-  @page:nth(2) {
+
+  @page:nth (2) {
     @bottom-left {
       content: none;
     }
@@ -255,3 +256,4 @@ a {
     display: none;
   }
 }
+

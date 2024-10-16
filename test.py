@@ -1,18 +1,20 @@
+import schedule
+import time
 from datetime import datetime
 
-def get_date_from_user():
-    user_input = input("Enter a date (YYYY-MM-DD): ")
-    
-    try:
-        # Attempt to parse the user input
-        parsed_date = datetime.strptime(user_input, "%Y-%m-%d")
-        print(f"Successfully parsed date: {parsed_date.date()}")
-    except ValueError as ve:
-        # Handle the case where the date is invalid
-        print(f"Error: {ve}. Please enter a valid date in the format YYYY-MM-DD.")
-    except Exception as e:
-        # Handle any other exceptions that may occur
-        print(f"An unexpected error occurred: {e}")
+def job():
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Task executed at: {current_time}")
 
-# Example usage
-get_date_from_user()
+# Schedule the job every minute
+schedule.every(1).minutes.do(job)
+
+print("Scheduler started. Press Ctrl+C to stop.")
+
+try:
+    while True:
+        # Run the scheduled tasks
+        schedule.run_pending()
+        time.sleep(1)  # Sleep to prevent busy waiting
+except KeyboardInterrupt:
+    print("Scheduler stopped.")

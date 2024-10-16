@@ -1,5 +1,9 @@
-Script started on 2024-10-15 16:46:32+05:30 [COMMAND="python test.py" TERM="xterm-256color" TTY="/dev/pts/28" COLUMNS="52" LINES="7"]
-Enter a date (YYYY-MM-DD): 2024-10-11
-Successfully parsed date: 2024-10-11
+Script started on 2024-10-16 09:55:41+05:30 [COMMAND="cat output.txt" TERM="xterm-256color" TTY="/dev/pts/30" COLUMNS="52" LINES="7"]
+Scheduler started. Press Ctrl+C to stop.
+Task executed at: 2024-10-16 09:51:59
+Task executed at: 2024-10-16 09:53:00
+Task executed at: 2024-10-16 09:54:00
+Task executed at: 2024-10-16 09:55:00
+Scheduler stopped.
 
-Script done on 2024-10-15 16:46:38+05:30 [COMMAND_EXIT_CODE="0"]
+Script done on 2024-10-16 09:55:41+05:30 [COMMAND_EXIT_CODE="0"]
