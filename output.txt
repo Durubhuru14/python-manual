@@ -1,7 +1,0 @@
-Scheduler started. Press Ctrl+C to stop.
-Task executed at: 2024-10-16 09:51:59
-Task executed at: 2024-10-16 09:53:00
-Task executed at: 2024-10-16 09:54:00
-Task executed at: 2024-10-16 09:55:00
-Scheduler stopped.
-
